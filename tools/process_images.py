@@ -40,6 +40,17 @@ JOBS = [
     ("65c2702c7f540ff5566f276c_231006_Elly Sofocli_SH02_0258.webp", "elly-sofocli", "corset", "tall", 0.5, 0.5),
     # RT Edgar
     ("rte-monogram-fireplace.png", "rt-edgar", "monogram-fireplace", "tall", 0.5, 0.5),
+    ("Free-iPhone-16-Pro-Laying-on-Floor-Mockup.jpg", "rt-edgar", "website-agent", "wide", 0.5, 0.5),
+    ("iPhone-Static.jpg", "rt-edgar", "website-home", "wide", 0.5, 0.5),
+    ("Light-Blue-Cover.jpg", "rt-edgar", "brochure-blue", "wide", 0.5, 0.5),
+    ("Navy-Cover.jpg", "rt-edgar", "brochure-navy", "wide", 0.5, 0.5),
+    ("Spread 08.png", "rt-edgar", "spread-feature", "wide", 0.5, 0.5),
+    ("Spread-03.png", "rt-edgar", "spread-details", "wide", 0.5, 0.5),
+    ("Brick Wall.jpg", "rt-edgar", "board-street", "wide", 0.5, 0.5),
+    ("Open-home-01.jpg", "rt-edgar", "open-home-navy", "tile", 0.5, 0.5),
+    ("Layer-1.jpg", "rt-edgar", "open-home-blue", "tile", 0.5, 0.5),
+    ("Bush 01.jpg", "rt-edgar", "board-garden", "tall", 0.46, 0.5),
+    ("MM_UrbanPoster_UP-SUM1-02.jpg", "rt-edgar", "board-kellor", "tall", 0.5, 0.5),
     # Femme Connection
     ("1_3f4432b3-ddfd-4e85-98c0-6f38406be284.webp", "femme-connection", "tile-f", "tile", 0.5, 0.5),
     ("4_929c41e4-2c4b-4212-a1d8-858b6fafd819.webp", "femme-connection", "tile-c", "tile", 0.5, 0.5),

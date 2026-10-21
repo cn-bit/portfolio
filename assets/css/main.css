@@ -376,3 +376,6 @@ h1, h2, h3 { font-weight: 300; text-wrap: balance; margin: 0; }
 .project-media:not(.pair):not(.fig-tiles) { grid-template-columns: minmax(0, 1fr); }
 .panel { width: 100%; min-width: 0; overflow: hidden; }
 .panel img { min-height: 0; }
+
+/* Tall signage pairs sit narrower so they do not dominate the page */
+.cs-figure.fig-pair.shape-tile { width: min(100%, 860px); }
