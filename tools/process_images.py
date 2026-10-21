@@ -47,8 +47,6 @@ JOBS = [
     ("3_3f4ad2b9-8294-4f9b-b0a8-9874cd2d19aa.webp", "femme-connection", "tile-pink", "tile", 0.5, 0.5),
     ("New_Arrivals_1_2a6f0254-eb03-468f-bc5c-3d1b3a8bbddf.webp", "femme-connection", "occasion", "square", 0.5, 0.5),
     ("New_Arrivals_4.webp", "femme-connection", "everyday", "square", 0.55, 0.5),
-    # RT Edgar
-    ("RTE_Cover.width-1200.jpg", "rt-edgar", "prospect-cover", None, 0.5, 0.5),
 ]
 
 
