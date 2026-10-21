@@ -51,6 +51,11 @@ JOBS = [
     ("Layer-1.jpg", "rt-edgar", "open-home-blue", "tile", 0.5, 0.5),
     ("Bush 01.jpg", "rt-edgar", "board-garden", "tall", 0.46, 0.5),
     ("MM_UrbanPoster_UP-SUM1-02.jpg", "rt-edgar", "board-kellor", "tall", 0.5, 0.5),
+    ("es-embossed-stationery.jpg", "elly-sofocli", "stationery", "tall", 0.56, 0.5),
+    ("es-garment-bag-ribbon.jpg", "elly-sofocli", "garment-bag", "tall", 0.5, 0.5),
+    ("es-velvet-hanger.jpg", "elly-sofocli", "hanger", "tall", 0.5, 0.5),
+    ("es-studio-interior.jpg", "elly-sofocli", "studio", "tall", 0.5, 0.5),
+    ("es-gown-on-rail.jpg", "elly-sofocli", "gown-on-rail", "tall", 0.5, 0.5),
     # Femme Connection
     ("1_3f4432b3-ddfd-4e85-98c0-6f38406be284.webp", "femme-connection", "tile-f", "tile", 0.5, 0.5),
     ("4_929c41e4-2c4b-4212-a1d8-858b6fafd819.webp", "femme-connection", "tile-c", "tile", 0.5, 0.5),
