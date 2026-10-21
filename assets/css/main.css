@@ -263,7 +263,7 @@ h1, h2, h3 { font-weight: 300; text-wrap: balance; margin: 0; }
   padding: 6%;
 }
 .panel img { height: 100%; width: auto; max-width: 100%; object-fit: contain; box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28); }
-.panel-rte { background: #3E4A42; }
+.panel-rte { background: #8DA3A3; }
 
 .cs-chapter {
   margin-top: clamp(3rem, 7vw, 6rem);

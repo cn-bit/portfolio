@@ -38,6 +38,8 @@ JOBS = [
     ("69ccbcab2e2d3e82695beff8_Phia.jpg", "elly-sofocli", "trunk-show", "wide", 0.5, 0.5),
     ("65179c63a320198b8409549d_DSC02607 5.jpg", "elly-sofocli", "studio-mono", "tall", 0.5, 0.45),
     ("65c2702c7f540ff5566f276c_231006_Elly Sofocli_SH02_0258.webp", "elly-sofocli", "corset", "tall", 0.5, 0.5),
+    # RT Edgar
+    ("rte-monogram-fireplace.png", "rt-edgar", "monogram-fireplace", "tall", 0.5, 0.5),
     # Femme Connection
     ("1_3f4432b3-ddfd-4e85-98c0-6f38406be284.webp", "femme-connection", "tile-f", "tile", 0.5, 0.5),
     ("4_929c41e4-2c4b-4212-a1d8-858b6fafd819.webp", "femme-connection", "tile-c", "tile", 0.5, 0.5),
