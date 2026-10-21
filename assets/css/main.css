@@ -379,3 +379,30 @@ h1, h2, h3 { font-weight: 300; text-wrap: balance; margin: 0; }
 
 /* Tall signage pairs sit narrower so they do not dominate the page */
 .cs-figure.fig-pair.shape-tile { width: min(100%, 860px); }
+
+/* Revision: case study structure */
+.visually-hidden { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.cs-disciplines {
+  font-family: var(--sans);
+  font-size: var(--t-sm);
+  color: var(--ink-soft);
+  margin: 1.25rem 0 0;
+  max-width: 60ch;
+}
+.cs-head .thesis { margin-top: 1rem; }
+.cs-sub {
+  font-family: var(--sans);
+  font-size: var(--t-sm);
+  font-weight: 500;
+  margin: 2rem 0 0.6rem;
+}
+.cs-section .body .cs-sub:first-child { margin-top: 0; }
+.role-list.services { columns: 2; column-gap: 2rem; margin-top: 0; border-top: 0; }
+.role-list.services li { break-inside: avoid; border-top: 1px solid var(--rule); border-bottom: 0; }
+.cs-section .body .visit { margin-top: 1.5rem; }
+.fig-tiles.five { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.cs-chapter + .cs-section { padding-top: clamp(1.5rem, 3vw, 2.5rem); }
+@media (max-width: 600px) {
+  .role-list.services { columns: 1; }
+  .fig-tiles.five { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
