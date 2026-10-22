@@ -692,6 +692,10 @@ def cnit():
         "That retention was built on trust, product knowledge and consistent delivery. It was also an early, practical education in customer experience: understanding what people value, managing expectations and giving them reasons to return.",
         "For me, building the brand was as much about delivering on its promise as communicating it."]), hidden=True)
     b += figure("fig-pair shape-square", [
+        img(p, "swatch-books", 1080, 1080, "Carl holding an armful of cloth sample books tied with coloured cord"),
+        img(p, "consult-table", 1440, 1440, "Open cloth books on the studio's round table, beside a carafe and two glasses")],
+        "The consultation: choosing cloth at the studio table.")
+    b += figure("fig-pair shape-square", [
         img(p, "hands", 1440, 1440, "Carl's hands holding tailoring shears and chalk, a tape measure hanging over his shirt"),
         img(p, "basted-jacket", 1440, 1440, "A basted navy jacket on a stand with a tape measure, ready for a fitting")],
         "Measuring, marking and fitting.")
@@ -708,6 +712,10 @@ def cnit():
         img(p, "collar", 1000, 1000, "Shirt collars in black and white", TILE4),
         img(p, "cuff", 1440, 1440, "A navy jacket cuff with working buttons", TILE4)],
         "Canvas, collar and cuff.")
+    b += figure("fig-pair shape-square", [
+        img(p, "cn-tie", 1080, 1080, "A striped grenadine tie with CN embroidered on the blade, among blue silk pocket squares"),
+        img(p, "tie-swatches", 1080, 1080, "A rolled knitted tie on a card of silk swatches with handwritten codes")],
+        "Own-label accessories, from silk swatch to finished tie.")
     b += chapter("04", "Growth, B2B and digital")
     b += block("growth", "Growth, B2B and digital", ps([
         "As the business developed, I expanded beyond private tailoring into corporate wardrobes, wedding tailoring, club blazers, uniforms, wholesale partnerships and white-label manufacturing.",
@@ -725,17 +733,18 @@ def cnit():
         img(p, "wedding-velvet", 1000, 1500, "A groom in a black velvet dinner jacket and check trousers against a navy backdrop"),
         img(p, "wedding-check", 1000, 1500, "A groom in a grey check dinner jacket and black trousers against a navy backdrop")],
         "Wedding tailoring.")
-    b += figure("fig-single shape-wide", [
-        img(p, "ties", 2400, 1600, "Silk ties in stripes of burgundy, navy, green and blue on a rail", WIDE)])
+    b += figure("fig-pair shape-square", [
+        img(p, "ferrari", 1080, 1080, "Carl in a grey jacket beside a silver Ferrari in a dealership showroom"),
+        img(p, "zagame", 1152, 1152, "A Zagame Collection spread titled An Open Letter From a Melbourne Tailor")],
+        "With Zagame's Ferrari dealership, and a Zagame Collection feature, 2019.")
     b += chapter("05", "Leading the business")
     b += block("leading", "Leading the business", ps([
         "As founder, I was responsible for the business as a whole. I built and led a team of up to eight across tailoring, sales, production, administration and marketing.",
         "My responsibilities ran from business planning and financial performance to hiring, team development, supplier relationships, customer service and operations.",
         "Leading the business meant balancing customer expectations with the realities of production, cash flow, staffing and commercial commitments, and adapting to change. Lockdowns, international supply disruption and a lasting shift in how people dress for work all required adjustments to the offer, the operating model and our priorities."]), hidden=True)
-    b += figure("fig-pair shape-square", [
-        img(p, "studio10", 1440, 1440, "Carl with Joe Hildebrand on the Studio 10 set"),
-        img(p, "zagame", 1152, 1152, "A Zagame Collection spread titled An Open Letter From a Melbourne Tailor")],
-        "Dressing Joe Hildebrand for a Studio 10 designer showcase, and a Zagame Collection feature, 2019.")
+    b += figure("fig-single portrait-narrow shape-square", [
+        img(p, "studio10", 1440, 1440, "Carl with Joe Hildebrand on the Studio 10 set", "(max-width: 600px) 80vw, 440px")],
+        "Dressing Joe Hildebrand for a Studio 10 designer showcase.")
     b += '''    <section class="cs-section" aria-labelledby="results">
       <h2 id="results">Commercial results</h2>
       <div class="body">
