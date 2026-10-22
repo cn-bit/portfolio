@@ -82,7 +82,7 @@ JOBS = [
     ("casper-proposition.webp", "casper-magazine", "proposition", None, 0.5, 0.5),
     ("casper-partners.png", "casper-magazine", "partners", None, 0.5, 0.5),
     ("casper-phone.webp", "casper-magazine", "phone", "tall", 0.5, 0.5),
-    # Carl Navè Individually Tailored
+    # Carl Navè — Individually Tailored
     ("cnit-portrait-glasses.jpg", "cnit", "portrait-glasses", "wide", 0.55, 0.4),
     ("cnit-studio.jpg", "cnit", "studio", "wide", 0.5, 0.5),
     ("cnit-hands-scissors.jpg", "cnit", "hands", "square", 0.6, 0.5),

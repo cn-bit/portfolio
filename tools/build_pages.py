@@ -547,7 +547,7 @@ def femme():
         "The work established a more coordinated approach to customer communications and provided the client with greater visibility over performance and future priorities."])
         + '        <p class="meta-label">Flow figure from Klaviyo reporting, January 2026 compared with January 2025.</p>\n'
         + visit("https://femmeconnection.com.au/", "Visit femmeconnection.com.au"))
-    b += nxt("cnit.html", "Carl Navè Individually Tailored")
+    b += nxt("cnit.html", "Carl Navè — Individually Tailored")
     return head("Femme Connection", "Building customer retention through CRM, loyalty and lifecycle marketing for online fashion retailer Femme Connection, delivered with Antimony Studio.") + b + FOOT
 
 
@@ -674,7 +674,7 @@ def cnit():
     b = f'''    <header class="cs-head">
       <a class="cs-back" href="../#work">Selected work</a>
       <p class="meta-label cs-label">A founder's story</p>
-      <h1>Carl Navè Individually Tailored</h1>
+      <h1>Carl Navè — Individually Tailored</h1>
       <p class="cs-disciplines">Entrepreneurship | Brand Development | Commercial Leadership | Customer Experience</p>
       <p class="thesis">Building a premium menswear brand from the ground up</p>
     </header>
@@ -687,7 +687,7 @@ def cnit():
         img(p, "portrait-glasses", 2400, 1600, "A man in tortoiseshell glasses, a grey check suit and navy tie, looking down", WIDE, lazy=False)])
     b += chapter_h("01", "The opportunity", "opportunity")
     b += chapter_body("opportunity", ps([
-        "In 2012, I established Carl Navè Individually Tailored to make premium tailored menswear more accessible through a highly personal service.",
+        "In 2012, I established Carl Navè — Individually Tailored to make premium tailored menswear more accessible through a highly personal service.",
         "The proposition was straightforward: well-made clothing, considered design and an experience shaped around the individual rather than a conventional retail transaction.",
         "From a studio in Melbourne's CBD, the business offered bespoke and made-to-measure garments to private clients, professionals, wedding parties and corporate customers. Over the following twelve years it expanded into corporate wardrobes, wholesale manufacturing and made-to-order e-commerce."]))
     b += figure("fig-single shape-wide", [
@@ -776,7 +776,7 @@ def cnit():
     b += figure("fig-single shape-wide", [
         img(p, "carl-wide", 2400, 1600, "Carl Navè in the studio, smiling, with a tape measure around his neck", WIDE)])
     b += nxt("rt-edgar.html", "RT Edgar")
-    return head("Carl Navè Individually Tailored", "A founder's story: twelve years building and running a premium Melbourne menswear business, from brand and customer experience to production, B2B growth and digital.") + b + FOOT
+    return head("Carl Navè — Individually Tailored", "A founder's story: twelve years building and running a premium Melbourne menswear business, from brand and customer experience to production, B2B growth and digital.") + b + FOOT
 
 
 if __name__ == "__main__":
