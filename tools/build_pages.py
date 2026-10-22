@@ -699,10 +699,6 @@ def cnit():
         img(p, "hands", 1440, 1440, "Carl's hands holding tailoring shears and chalk, a tape measure hanging over his shirt"),
         img(p, "basted-jacket", 1440, 1440, "A basted navy jacket on a stand with a tape measure, ready for a fitting")],
         "Measuring, marking and fitting.")
-    b += figure("fig-pair narrow shape-tall", [
-        img(p, "milan-adp", 1080, 1350, "A model in a white double-breasted linen suit outside the Acqua di Parma boutique in Milan"),
-        img(p, "milan-galleria", 1080, 1350, "The same white linen suit in Milan's Galleria Vittorio Emanuele II")],
-        "A collaboration with Acqua di Parma, photographed in Milan.")
     b += chapter("03", "Product and production")
     b += block("production", "Product and production", ps([
         "Behind the customer experience sat a complex product and production operation, from fabric sourcing, design and technical specifications to manufacturing, fittings, alterations, quality control and delivery.",
@@ -711,15 +707,12 @@ def cnit():
     b += figure("fig-single shape-wide", [
         img(p, "sewing", 2400, 1600, "Carl at an industrial sewing machine by a window, a tape measure around his neck", WIDE)],
         "In the workroom.")
-    b += figure("fig-tiles three shape-square", [
+    b += figure("fig-tiles four shape-square", [
         img(p, "canvas", 1440, 1440, "Hand-stitched canvas and chalk marks on navy cloth", TILE4),
         img(p, "collar", 1000, 1000, "Shirt collars in black and white", TILE4),
-        img(p, "cuff", 1440, 1440, "A navy jacket cuff with working buttons", TILE4)],
-        "Canvas, collar and cuff.")
-    b += figure("fig-pair shape-square", [
-        img(p, "cn-tie", 1080, 1080, "A striped grenadine tie with CN embroidered on the blade, among blue silk pocket squares"),
-        img(p, "tie-swatches", 1080, 1080, "A rolled knitted tie on a card of silk swatches with handwritten codes")],
-        "Own-label accessories, from silk swatch to finished tie.")
+        img(p, "cuff", 1440, 1440, "A navy jacket cuff with working buttons", TILE4),
+        img(p, "cn-tie", 1080, 1080, "A striped grenadine tie with CN embroidered on the blade", TILE4)],
+        "Canvas, collar, cuff and the CN own-label tie.")
     b += chapter("04", "Growth, B2B and digital")
     b += block("growth", "Growth, B2B and digital", ps([
         "As the business developed, I expanded beyond private tailoring into corporate wardrobes, wedding tailoring, club blazers, uniforms, wholesale partnerships and white-label manufacturing.",
@@ -727,20 +720,20 @@ def cnit():
         "White-label production became an established revenue stream, generating around $500,000 a year during its established operating period.",
         "Online, I introduced e-commerce and made-to-order capability so customers could engage with the brand beyond the studio. CRM and communication processes supported appointments, customer records, referrals, follow-up and repeat business.",
         "Diversification let the business serve different needs while drawing on the same design, production and service capabilities."]), hidden=True)
-    b += figure("fig-single", [
-        img(p, "web-home", 1600, 650, "The carlnave.com.au home page: the Carl Navè logo over tailoring tools on navy velvet, with an invitation to book a free consultation", WIDE)],
-        "The carlnave.com.au home page, as archived.")
-    b += figure("fig-single screen-narrow", [
-        img(p, "web-store", 1600, 1602, "The made-to-order online store, with jackets shown in navy, black and charcoal", "(max-width: 900px) 100vw, 860px")],
-        "The made-to-order online store, as archived.")
-    b += figure("fig-pair narrow shape-tile", [
-        img(p, "wedding-velvet", 1000, 1500, "A groom in a black velvet dinner jacket and check trousers against a navy backdrop"),
-        img(p, "wedding-check", 1000, 1500, "A groom in a grey check dinner jacket and black trousers against a navy backdrop")],
-        "Wedding tailoring.")
+    b += figure("fig-tiles four shape-tile", [
+        img(p, "wedding-velvet", 1000, 1500, "A groom in a black velvet dinner jacket and check trousers against a navy backdrop", TILE4),
+        img(p, "wedding-check", 1000, 1500, "A groom in a grey check dinner jacket against a navy backdrop", TILE4),
+        img(p, "milan-adp", 900, 1350, "A white double-breasted linen suit outside the Acqua di Parma boutique in Milan", TILE4),
+        img(p, "milan-galleria", 900, 1350, "The same white linen suit in Milan's Galleria Vittorio Emanuele II", TILE4)],
+        "Wedding tailoring, and a collaboration with Acqua di Parma photographed in Milan.")
     b += figure("fig-pair shape-square", [
         img(p, "ferrari", 1080, 1080, "Carl in a grey jacket beside a silver Ferrari in a dealership showroom"),
         img(p, "zagame", 1152, 1152, "A Zagame Collection spread titled An Open Letter From a Melbourne Tailor")],
         "With Zagame's Ferrari dealership, and a Zagame Collection feature, 2019.")
+    b += figure("fig-pair shape-wide", [
+        img(p, "web-home-crop", 1158, 772, "The carlnave.com.au home page: the Carl Navè logo over tailoring tools on navy velvet, with an invitation to book a free consultation"),
+        img(p, "web-store-crop", 1920, 1280, "The made-to-order online store page, introducing Italian made-to-order suits")],
+        "The website and made-to-order online store, as archived.")
     b += chapter("05", "Leading the business")
     b += block("leading", "Leading the business", ps([
         "As founder, I was responsible for the business as a whole. I built and led a team of up to eight across tailoring, sales, production, administration and marketing.",
