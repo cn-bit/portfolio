@@ -746,9 +746,10 @@ def cnit():
         "As founder, I was responsible for the business as a whole. I built and led a team of up to eight across tailoring, sales, production, administration and marketing.",
         "My responsibilities ran from business planning and financial performance to hiring, team development, supplier relationships, customer service and operations.",
         "Leading the business meant balancing customer expectations with the realities of production, cash flow, staffing and commercial commitments, and adapting to change. Lockdowns, international supply disruption and a lasting shift in how people dress for work all required adjustments to the offer, the operating model and our priorities."]), hidden=True)
-    b += figure("fig-single portrait-narrow shape-square", [
-        img(p, "studio10", 1440, 1440, "Carl with Joe Hildebrand on the Studio 10 set", "(max-width: 600px) 80vw, 440px")],
-        "Dressing Joe Hildebrand for a Studio 10 designer showcase.")
+    b += figure("fig-pair shape-square", [
+        img(p, "studio10", 1440, 1440, "Carl with Joe Hildebrand on the Studio 10 set"),
+        img(p, "carl-teal", 1080, 1080, "Carl in a teal double-breasted jacket among spring blossom")],
+        "Dressing Joe Hildebrand for a Studio 10 designer showcase, and Carl in teal double-breasted tailoring.")
     b += '''    <section class="cs-section" aria-labelledby="results">
       <h2 id="results">Commercial results</h2>
       <div class="body">
@@ -768,8 +769,8 @@ def cnit():
         "Building and running the business shaped how I approach commercial relationships and creative work today.",
         "I have invested in brand development, commissioned creative work, managed marketing budgets, developed products and balanced commercial ambition with operational reality. I understand what sits behind a client's decision because I have made those decisions myself.",
         "It taught me the value of good partners, clear communication and creative work that serves a genuine business purpose. That perspective continues to inform how I lead client relationships."]))
-    b += figure("fig-single portrait-narrow shape-square", [
-        img(p, "carl", 1440, 1440, "Carl Navè in the studio, smiling, with a tape measure around his neck", "(max-width: 600px) 80vw, 440px")])
+    b += figure("fig-single shape-wide", [
+        img(p, "carl-wide", 2400, 1600, "Carl Navè in the studio, smiling, with a tape measure around his neck", WIDE)])
     b += nxt("rt-edgar.html", "RT Edgar")
     return head("Carl Navè Individually Tailored", "A founder's story: twelve years building and running a premium Melbourne menswear business, from brand and customer experience to production, B2B growth and digital.") + b + FOOT
 

@@ -96,7 +96,7 @@ JOBS = [
     ("cnit-wedding-2.jpg", "cnit", "wedding-check", "tile", 0.5, 0.5),
     ("cnit-studio10.jpg", "cnit", "studio10", "square", 0.5, 0.45),
     ("cnit-zagame-spread.jpg", "cnit", "zagame", "square", 0.5, 0.5),
-    ("cnit-carl-studio.jpg", "cnit", "carl", "square", 0.5, 0.5),
+    ("cnit-carl-studio.jpg", "cnit", "carl-wide", "wide", 0.5, 0.3),
     ("cnit-swatch-books.jpg", "cnit", "swatch-books", "square", 0.5, 0.5),
     ("cnit-consult-table.jpg", "cnit", "consult-table", "square", 0.5, 0.5),
     ("cnit-ferrari.jpg", "cnit", "ferrari", "square", 0.5, 0.5),
@@ -104,6 +104,7 @@ JOBS = [
     ("cnit-tie-swatches.jpg", "cnit", "tie-swatches", "square", 0.5, 0.5),
     ("cnit-milan-adp.jpg", "cnit", "milan-adp", "tall", 0.5, 0.5),
     ("cnit-milan-galleria.jpg", "cnit", "milan-galleria", "tall", 0.5, 0.5),
+    ("cnit-carl-teal.jpg", "cnit", "carl-teal", "square", 0.5, 0.5),
     ("cnit-web-home.png", "cnit", "web-home", None, 0.5, 0.5),
     ("cnit-web-store.png", "cnit", "web-store", None, 0.5, 0.5),
 ]
