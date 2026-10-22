@@ -102,6 +102,8 @@ JOBS = [
     ("cnit-ferrari.jpg", "cnit", "ferrari", "square", 0.5, 0.5),
     ("cnit-cn-tie.jpg", "cnit", "cn-tie", "square", 0.5, 0.5),
     ("cnit-tie-swatches.jpg", "cnit", "tie-swatches", "square", 0.5, 0.5),
+    ("cnit-milan-adp.jpg", "cnit", "milan-adp", "tall", 0.5, 0.5),
+    ("cnit-milan-galleria.jpg", "cnit", "milan-galleria", "tall", 0.5, 0.5),
     ("cnit-web-home.png", "cnit", "web-home", None, 0.5, 0.5),
     ("cnit-web-store.png", "cnit", "web-store", None, 0.5, 0.5),
 ]

@@ -686,7 +686,7 @@ def cnit():
     b += chapter("02", "Brand and customer experience")
     b += block("brand", "Brand and customer experience", ps([
         "The brand needed to stand for more than the garments. It was built around quality, fit, personal service and an appreciation of craftsmanship.",
-        "I developed the positioning, product offering, visual identity and marketing approach, and the brand grew through editorial content, digital marketing, partnerships, events and referrals.",
+        "I developed the positioning, product offering, visual identity and marketing approach, and the brand grew through editorial content, digital marketing, events, referrals and partnerships, including a collaboration with Acqua di Parma.",
         "Every relationship began with a consultation. We worked to understand each customer's needs, preferences, lifestyle and the occasions they were dressing for, then guided them through fabric selection, design, fittings and delivery.",
         "Customers returned for new garments, wardrobe updates and important occasions. Over time the business served more than 3,000 customers, and around 60% came back.",
         "That retention was built on trust, product knowledge and consistent delivery. It was also an early, practical education in customer experience: understanding what people value, managing expectations and giving them reasons to return.",
@@ -699,6 +699,10 @@ def cnit():
         img(p, "hands", 1440, 1440, "Carl's hands holding tailoring shears and chalk, a tape measure hanging over his shirt"),
         img(p, "basted-jacket", 1440, 1440, "A basted navy jacket on a stand with a tape measure, ready for a fitting")],
         "Measuring, marking and fitting.")
+    b += figure("fig-pair narrow shape-tall", [
+        img(p, "milan-adp", 1080, 1350, "A model in a white double-breasted linen suit outside the Acqua di Parma boutique in Milan"),
+        img(p, "milan-galleria", 1080, 1350, "The same white linen suit in Milan's Galleria Vittorio Emanuele II")],
+        "A collaboration with Acqua di Parma, photographed in Milan.")
     b += chapter("03", "Product and production")
     b += block("production", "Product and production", ps([
         "Behind the customer experience sat a complex product and production operation, from fabric sourcing, design and technical specifications to manufacturing, fittings, alterations, quality control and delivery.",
