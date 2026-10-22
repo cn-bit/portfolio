@@ -721,11 +721,11 @@ def cnit():
         "Online, I introduced e-commerce and made-to-order capability so customers could engage with the brand beyond the studio. CRM and communication processes supported appointments, customer records, referrals, follow-up and repeat business.",
         "Diversification let the business serve different needs while drawing on the same design, production and service capabilities."]), hidden=True)
     b += figure("fig-tiles four shape-tile", [
-        img(p, "wedding-velvet", 1000, 1500, "A groom in a black velvet dinner jacket and check trousers against a navy backdrop", TILE4),
-        img(p, "wedding-check", 1000, 1500, "A groom in a grey check dinner jacket against a navy backdrop", TILE4),
+        img(p, "racing-garden", 1000, 1500, "A model in a navy three-piece suit seated in a Melbourne garden pavilion", TILE4),
+        img(p, "racing-walk", 1000, 1500, "The same navy suit, walking through a Melbourne garden", TILE4),
         img(p, "milan-adp", 900, 1350, "A white double-breasted linen suit outside the Acqua di Parma boutique in Milan", TILE4),
         img(p, "milan-galleria", 900, 1350, "The same white linen suit in Milan's Galleria Vittorio Emanuele II", TILE4)],
-        "Wedding tailoring, and a collaboration with Acqua di Parma photographed in Milan.")
+        "A Spring Racing campaign in Melbourne, and a collaboration with Acqua di Parma photographed in Milan.")
     b += figure("fig-pair shape-square", [
         img(p, "ferrari", 1080, 1080, "Carl in a grey jacket beside a silver Ferrari in a dealership showroom"),
         img(p, "zagame", 1152, 1152, "A Zagame Collection spread titled An Open Letter From a Melbourne Tailor")],
