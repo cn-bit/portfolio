@@ -7,7 +7,7 @@ A plain static site (HTML and CSS, no build step), published with GitHub Pages.
 ## What's where
 
 ```
-index.html                 Home: introduction and the five projects
+index.html                 Home: introduction and the six projects
 about.html                 About and contact
 work/                      One page per case study
   casper-magazine.html
@@ -15,6 +15,7 @@ work/                      One page per case study
   elly-sofocli.html
   rt-edgar.html
   femme-connection.html
+  cnit.html
 assets/css/main.css        All styling (colours and type are set at the top)
 assets/img/<project>/      Web-ready images, each in a large and an 800px version
 _originals/                Original uploads, kept for reprocessing (not linked from the site)

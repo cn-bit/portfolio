@@ -82,6 +82,23 @@ JOBS = [
     ("casper-proposition.webp", "casper-magazine", "proposition", None, 0.5, 0.5),
     ("casper-partners.png", "casper-magazine", "partners", None, 0.5, 0.5),
     ("casper-phone.webp", "casper-magazine", "phone", "tall", 0.5, 0.5),
+    # Carl Navè Individually Tailored
+    ("cnit-portrait-glasses.jpg", "cnit", "portrait-glasses", "wide", 0.55, 0.4),
+    ("cnit-studio.jpg", "cnit", "studio", "wide", 0.5, 0.5),
+    ("cnit-hands-scissors.jpg", "cnit", "hands", "square", 0.6, 0.5),
+    ("cnit-basted-jacket.jpg", "cnit", "basted-jacket", "square", 0.5, 0.45),
+    ("cnit-sewing.jpg", "cnit", "sewing", "wide", 0.5, 0.5),
+    ("cnit-canvas.jpg", "cnit", "canvas", "square", 0.5, 0.5),
+    ("cnit-collar.jpg", "cnit", "collar", "square", 0.5, 0.5),
+    ("cnit-cuff.jpg", "cnit", "cuff", "square", 0.45, 0.5),
+    ("cnit-ties.jpg", "cnit", "ties", "wide", 0.5, 0.5),
+    ("cnit-wedding-1.jpg", "cnit", "wedding-1", "tall", 0.5, 0.55),
+    ("cnit-wedding-2.jpg", "cnit", "wedding-2", "tall", 0.5, 0.55),
+    ("cnit-studio10.jpg", "cnit", "studio10", "square", 0.5, 0.45),
+    ("cnit-zagame-spread.jpg", "cnit", "zagame", "square", 0.5, 0.5),
+    ("cnit-carl-studio.jpg", "cnit", "carl", "square", 0.5, 0.5),
+    ("cnit-web-home.png", "cnit", "web-home", None, 0.5, 0.5),
+    ("cnit-web-store.png", "cnit", "web-store", None, 0.5, 0.5),
 ]
 
 

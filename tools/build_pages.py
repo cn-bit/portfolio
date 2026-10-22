@@ -60,7 +60,7 @@ FOOT = '''  </div>
     </div>
     <div class="colophon meta-label">
       <span>Carl Navè, Melbourne</span>
-      <span>Project work shown was delivered with Antimony Studio.</span>
+      <span>Agency work shown was delivered with Antimony Studio.</span>
     </div>
   </div>
 </footer>
@@ -557,7 +557,7 @@ def femme():
         "The work established a more coordinated approach to customer communications and provided the client with greater visibility over performance and future priorities."])
         + '        <p class="meta-label">Flow figure from Klaviyo reporting, January 2026 compared with January 2025.</p>\n'
         + visit("https://femmeconnection.com.au/", "Visit femmeconnection.com.au"))
-    b += nxt("rt-edgar.html", "RT Edgar")
+    b += nxt("cnit.html", "Carl Navè Individually Tailored")
     return head("Femme Connection", "Building customer retention through CRM, loyalty and lifecycle marketing for online fashion retailer Femme Connection, delivered with Antimony Studio.") + b + FOOT
 
 
@@ -655,8 +655,114 @@ def casper():
     return head("Casper Magazine", "Go-to-market strategy, advertising products and commercial partnerships for Melbourne's independent Casper Magazine, delivered with Antimony Studio.") + b + FOOT
 
 
+def cnit():
+    p = "cnit"
+    rows = "".join(f"      <div><dt>{k}</dt><dd>{v}</dd></div>\n" for k, v in [
+        ("Business", "Bespoke and made-to-measure menswear, Melbourne CBD"),
+        ("Period", "2012 to 2024"),
+        ("My role", "Founder and General Manager")])
+    b = f'''    <header class="cs-head">
+      <a class="cs-back" href="../#work">Selected work</a>
+      <p class="meta-label cs-label">A founder's story</p>
+      <h1>Carl Navè Individually Tailored</h1>
+      <p class="cs-disciplines">Entrepreneurship | Brand Development | Commercial Leadership | Customer Experience</p>
+      <p class="thesis">Building a premium menswear brand from the ground up</p>
+    </header>
+
+    <dl class="cs-meta">
+{rows}    </dl>
+
+'''
+    b += figure("fig-single shape-wide", [
+        img(p, "portrait-glasses", 2400, 1600, "A man in tortoiseshell glasses, a grey check suit and navy tie, looking down", WIDE, lazy=False)])
+    b += chapter("01", "The opportunity")
+    b += block("opportunity", "The opportunity", ps([
+        "In 2012, I established Carl Navè Individually Tailored to make premium tailored menswear more accessible through a highly personal service.",
+        "The proposition was straightforward: well-made clothing, considered design and an experience shaped around the individual rather than a conventional retail transaction.",
+        "From a studio in Melbourne's CBD, the business offered bespoke and made-to-measure garments to private clients, professionals, wedding parties and corporate customers. Over the following twelve years it expanded into corporate wardrobes, wholesale manufacturing and made-to-order e-commerce."]), hidden=True)
+    b += figure("fig-single shape-wide", [
+        img(p, "studio", 2400, 1600, "The tailoring studio: linen curtains, a round table with timber chairs and a jacket on a stand", WIDE)],
+        "The studio in Melbourne's CBD.")
+    b += chapter("02", "Brand and customer experience")
+    b += block("brand", "Brand and customer experience", ps([
+        "The brand needed to stand for more than the garments. It was built around quality, fit, personal service and an appreciation of craftsmanship.",
+        "I developed the positioning, product offering, visual identity and marketing approach, and the brand grew through editorial content, digital marketing, partnerships, events and referrals.",
+        "Every relationship began with a consultation. We worked to understand each customer's needs, preferences, lifestyle and the occasions they were dressing for, then guided them through fabric selection, design, fittings and delivery.",
+        "Customers returned for new garments, wardrobe updates and important occasions. Over time the business served more than 3,000 customers, and around 60% came back.",
+        "That retention was built on trust, product knowledge and consistent delivery. It was also an early, practical education in customer experience: understanding what people value, managing expectations and giving them reasons to return.",
+        "For me, building the brand was as much about delivering on its promise as communicating it."]), hidden=True)
+    b += figure("fig-pair shape-square", [
+        img(p, "hands", 1440, 1440, "Carl's hands holding tailoring shears and chalk, a tape measure hanging over his shirt"),
+        img(p, "basted-jacket", 1440, 1440, "A basted navy jacket on a stand with a tape measure, ready for a fitting")],
+        "Measuring, marking and fitting.")
+    b += chapter("03", "Product and production")
+    b += block("production", "Product and production", ps([
+        "Behind the customer experience sat a complex product and production operation, from fabric sourcing, design and technical specifications to manufacturing, fittings, alterations, quality control and delivery.",
+        "I developed and managed relationships with mills, manufacturers and suppliers in Melbourne and overseas, including Italy, the United Kingdom, France and China.",
+        "I also managed pricing, supplier negotiations, purchasing, production planning and financial performance. The constant challenge was balancing the craft of the garments with the commercial realities of margin, capacity and customer expectations."]), hidden=True)
+    b += figure("fig-single shape-wide", [
+        img(p, "sewing", 2400, 1600, "Carl at an industrial sewing machine by a window, a tape measure around his neck", WIDE)],
+        "In the workroom.")
+    b += figure("fig-tiles three shape-square", [
+        img(p, "canvas", 1440, 1440, "Hand-stitched canvas and chalk marks on navy cloth", TILE4),
+        img(p, "collar", 1000, 1000, "Shirt collars in black and white", TILE4),
+        img(p, "cuff", 1440, 1440, "A navy jacket cuff with working buttons", TILE4)],
+        "Canvas, collar and cuff.")
+    b += chapter("04", "Growth, B2B and digital")
+    b += block("growth", "Growth, B2B and digital", ps([
+        "As the business developed, I expanded beyond private tailoring into corporate wardrobes, wedding tailoring, club blazers, uniforms, wholesale partnerships and white-label manufacturing.",
+        "The B2B work meant understanding the requirements of other retailers and corporate clients, and developing suitable product and production solutions. Clients included Barry Plant, Woodards, Buxton and Zagame's Ferrari dealership.",
+        "White-label production became an established revenue stream, generating around $500,000 a year during its established operating period.",
+        "Online, I introduced e-commerce and made-to-order capability so customers could engage with the brand beyond the studio. CRM and communication processes supported appointments, customer records, referrals, follow-up and repeat business.",
+        "Diversification let the business serve different needs while drawing on the same design, production and service capabilities."]), hidden=True)
+    b += figure("fig-single", [
+        img(p, "web-home", 1600, 650, "The carlnave.com.au home page: the Carl Navè logo over tailoring tools on navy velvet, with an invitation to book a free consultation", WIDE)],
+        "The carlnave.com.au home page, as archived.")
+    b += figure("fig-single screen-narrow", [
+        img(p, "web-store", 1600, 1602, "The made-to-order online store, with jackets shown in navy, black and charcoal", "(max-width: 900px) 100vw, 860px")],
+        "The made-to-order online store, as archived.")
+    b += figure("fig-pair narrow shape-tall", [
+        img(p, "wedding-1", 1056, 1320, "Two grooms in a black dinner suit and a check jacket against a navy backdrop"),
+        img(p, "wedding-2", 1056, 1320, "A seated man in a black dinner suit and a standing man in a burgundy dinner jacket")],
+        "Wedding tailoring.")
+    b += figure("fig-single shape-wide", [
+        img(p, "ties", 2400, 1600, "Silk ties in stripes of burgundy, navy, green and blue on a rail", WIDE)])
+    b += chapter("05", "Leading the business")
+    b += block("leading", "Leading the business", ps([
+        "As founder, I was responsible for the business as a whole. I built and led a team of up to eight across tailoring, sales, production, administration and marketing.",
+        "My responsibilities ran from business planning and financial performance to hiring, team development, supplier relationships, customer service and operations.",
+        "Leading the business meant balancing customer expectations with the realities of production, cash flow, staffing and commercial commitments, and adapting to change. Lockdowns, international supply disruption and a lasting shift in how people dress for work all required adjustments to the offer, the operating model and our priorities."]), hidden=True)
+    b += figure("fig-pair shape-square", [
+        img(p, "studio10", 1440, 1440, "Carl with Joe Hildebrand on the Studio 10 set"),
+        img(p, "zagame", 1152, 1152, "A Zagame Collection spread titled An Open Letter From a Melbourne Tailor")],
+        "Dressing Joe Hildebrand for a Studio 10 designer showcase, and a Zagame Collection feature, 2019.")
+    b += '''    <section class="cs-section" aria-labelledby="results">
+      <h2 id="results">Commercial results</h2>
+      <div class="body">
+        <dl class="figures">
+          <div><dt>Peak annual revenue</dt><dd>$1.2m</dd></div>
+          <div><dt>Customers served</dt><dd>3,000+</dd></div>
+          <div><dt>Garments produced</dt><dd>15,000+</dd></div>
+          <div><dt>Repeat clientele</dt><dd>Around 60%</dd></div>
+        </dl>
+        <p>Over twelve years, the business grew into an established independent menswear label with a loyal customer base, a team of up to eight, an established wholesale and white-label business, B2B relationships across property and automotive, and made-to-order e-commerce.</p>
+        <p class="meta-label">Revenue is a peak annual figure. Customer and garment numbers are cumulative across the life of the business.</p>
+      </div>
+    </section>
+
+'''
+    b += block("taught", "What it taught me", ps([
+        "Building and running the business shaped how I approach commercial relationships and creative work today.",
+        "I have invested in brand development, commissioned creative work, managed marketing budgets, developed products and balanced commercial ambition with operational reality. I understand what sits behind a client's decision because I have made those decisions myself.",
+        "It taught me the value of good partners, clear communication and creative work that serves a genuine business purpose. That perspective continues to inform how I lead client relationships."]))
+    b += figure("fig-single portrait-narrow shape-square", [
+        img(p, "carl", 1440, 1440, "Carl Navè in the studio, smiling, with a tape measure around his neck", "(max-width: 600px) 80vw, 440px")])
+    b += nxt("rt-edgar.html", "RT Edgar")
+    return head("Carl Navè Individually Tailored", "A founder's story: twelve years building and running a premium Melbourne menswear business, from brand and customer experience to production, B2B growth and digital.") + b + FOOT
+
+
 if __name__ == "__main__":
     for name, fn in [("rt-edgar", rt_edgar), ("casper-magazine", casper), ("byron-bay-bone-broth", bbbb),
-                     ("elly-sofocli", elly), ("femme-connection", femme)]:
+                     ("elly-sofocli", elly), ("femme-connection", femme), ("cnit", cnit)]:
         (ROOT / "work" / f"{name}.html").write_text(fn())
         print("wrote", name)

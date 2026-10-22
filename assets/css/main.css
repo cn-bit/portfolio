@@ -472,3 +472,17 @@ h1, h2, h3 { font-weight: 300; text-wrap: balance; margin: 0; }
 
 /* A single portrait shown at a modest size, centred */
 .cs-figure.portrait-narrow { width: min(100%, 440px); margin-inline: auto; }
+
+/* Founder's story: label above the title and the results figures */
+.cs-label { margin: 0 0 0.75rem; }
+.figures {
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.75rem 1.5rem; margin: 0 0 2rem; padding: 1.5rem 0;
+  border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
+}
+.figures div { display: flex; flex-direction: column-reverse; gap: 0.35rem; }
+.figures dd { margin: 0; font-family: var(--serif, "Newsreader", Georgia, serif); font-size: var(--t-xl); line-height: 1.05; letter-spacing: -0.01em; }
+.figures dt { font-size: 0.8rem; color: var(--ink-soft); }
+.cs-figure.screen-narrow { width: min(100%, 860px); margin-inline: auto; }
+.cs-figure.screen-narrow img, .cs-figure.fig-single:not([class*="shape-"]) img { box-shadow: 0 0 0 1px var(--rule); }
+.project-caption .cs-label { grid-column: 1 / -1; margin: 0 0 -0.5rem; }
