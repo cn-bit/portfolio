@@ -207,11 +207,8 @@ def rt_edgar():
                    ("Engagement", "From September 2024"),
                    ("My role", "Account Director, Antimony Studio"),
                ])
-    b += ('    <figure class="cs-figure fig-single">\n'
-          '      <div class="panel panel-rte"><img src="../assets/img/rt-edgar/monogram-fireplace.jpg" width="578" height="722" '
-          'alt="The redesigned RTE monogram, with Est 1894, over an interior with a marble fireplace"></div>\n'
-          '      <figcaption class="meta-label">The refreshed RTE monogram and lock-up.</figcaption>\n'
-          '    </figure>\n\n')
+    b += figure("fig-single shape-wide", [
+        img(p, "sign-hanging", 2400, 1600, "A hanging RT Edgar sign in navy with the white wordmark, on a concrete building", WIDE, lazy=False)])
     b += block("context", "Business context", ps([
         "With a history dating back to 1894, RT Edgar is one of Melbourne's established real estate groups, recognised across premium residential markets.",
         "Its longstanding reputation and established client relationships were considerable assets. At the same time, a business operating across multiple offices, agents and marketing channels needed a consistent identity and digital experience that could serve both existing and future customers.",
@@ -235,6 +232,11 @@ def rt_edgar():
         ("Content &amp; integrated communications", [
             "The wider programme included content planning, video production oversight and the development of communications and marketing applications that supported a more consistent brand presence."]),
     ]))
+    b += ('    <figure class="cs-figure fig-single">\n'
+          '      <div class="panel panel-rte"><img src="../assets/img/rt-edgar/monogram-fireplace.jpg" width="578" height="722" '
+          'alt="The refreshed RTE monogram, with Est 1894, over an interior with a marble fireplace" loading="lazy"></div>\n'
+          '      <figcaption class="meta-label">The refreshed RTE monogram and lock-up.</figcaption>\n'
+          '    </figure>\n\n')
     b += figure("fig-pair shape-wide", [
         img(p, "website-home", 2400, 1600, "The new RT Edgar website on a phone"),
         img(p, "website-agent", 2400, 1600, "An agent profile page on the RT Edgar website")],
@@ -253,9 +255,14 @@ def rt_edgar():
         img(p, "spread-feature", 1083, 722, "Brochure spread with a feature statement and interior photography"),
         img(p, "spread-details", 1083, 722, "Brochure spread with property details and a living room")],
         "Brochure spreads.")
-    b += figure("fig-single shape-wide", [
-        img(p, "board-street", 2025, 1350, "An RT Edgar sales board on a brick wall in a Melbourne street", WIDE)],
-        "Sales boards and signage.")
+    b += ('    <figure class="cs-figure">\n      <div class="fade-seq">\n'
+          + "".join(f'        <img src="../assets/img/rt-edgar/boards-{i}-800.jpg" srcset="../assets/img/rt-edgar/boards-{i}-800.jpg 800w, ../assets/img/rt-edgar/boards-{i}.jpg 1920w" sizes="{WIDE}" width="1920" height="1280" alt="{a}" loading="lazy">\n'
+                    for i, a in [(1, "RT Edgar sales board in a garden setting"), (2, "Double-sided RT Edgar street billboard"), (3, "RT Edgar campaign board in the street")])
+          + '      </div>\n      <figcaption class="meta-label">Sales boards and outdoor campaign.</figcaption>\n    </figure>\n\n')
+    b += figure("fig-pair shape-wide", [
+        img(p, "tram-stop", 2400, 1600, "An RT Edgar poster in a Melbourne tram stop shelter"),
+        img(p, "stand-navy", 2400, 1600, "A navy RT Edgar open home A-frame on a footpath")],
+        "Signage across the city.")
     b += block("services", "Services &amp; deliverables", services([
         "Brand and competitive research", "Audience segmentation and customer journey mapping",
         "CX strategy and recommendations", "Brand identity refresh and design system",
@@ -496,14 +503,22 @@ def femme():
     return head("Femme Connection", "Building customer retention through CRM, loyalty and lifecycle marketing for online fashion retailer Femme Connection, delivered with Antimony Studio.") + b + FOOT
 
 
-# Femme imagery: brand marks for now (blank panel removed). Campaign imagery to follow.
+# Femme imagery
 _FT = [("tile-f", "F monogram on pink"), ("tile-c", "C monogram on coral"), ("tile-heart", "Pink heart on black"),
        ("tile-star", "White star on green"), ("tile-check", "Black check on sand")]
-FEMME_HERO = ('    <figure class="cs-figure">\n      <div class="fig-tiles five shape-tile">\n'
-              + "".join(img("femme-connection", n, 1000, 1500, f"Femme Connection brand graphic: {a}", "(max-width: 600px) 33vw, 270px", lazy=False).replace("      <img", "        <img") for n, a in _FT)
-              + '      </div>\n      <figcaption class="meta-label">Brand identity by Antimony Studio.</figcaption>\n    </figure>\n\n')
-FEMME_MID = ""
-FEMME_BRAND = ""
+FEMME_HERO = figure("fig-single shape-pano", [
+    img("femme-connection", "garden", 2400, 1200, "A model in a printed maxi dress on a lawn in front of a country house", WIDE, lazy=False)],
+    "Campaign photography courtesy of Femme Connection.")
+FEMME_MID = figure("fig-pair shape-tall", [
+    img("femme-connection", "vacation", 1242, 1552, "Vacation Vibes campaign: a model in a tropical print shirt and trousers"),
+    img("femme-connection", "spring", 1242, 1552, "Spring Collection campaign: a model in a pale blue dress in a formal garden")],
+    "Vacation Vibes and Spring Collection campaigns.")
+FEMME_BRAND = figure("fig-pair shape-tall", [
+    img("femme-connection", "beach", 1242, 1552, "A model in a blue and white printed dress on a beach"),
+    img("femme-connection", "trousers", 1242, 1552, "A model in a white top and floral trousers on a sunlit terrace")]) + \
+    ('    <figure class="cs-figure">\n      <div class="fig-tiles five shape-tile">\n'
+     + "".join(img("femme-connection", n, 1000, 1500, f"Femme Connection brand graphic: {a}", "(max-width: 600px) 33vw, 270px").replace("      <img", "        <img") for n, a in _FT)
+     + '      </div>\n      <figcaption class="meta-label">Brand identity by Antimony Studio.</figcaption>\n    </figure>\n\n')
 
 
 if __name__ == "__main__":
