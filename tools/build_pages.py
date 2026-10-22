@@ -447,6 +447,53 @@ def elly():
     return head("Elly Sofoclí", "Building an international wholesale proposition for Melbourne bridal designer Elly Sofoclí, delivered with Antimony Studio.") + b + FOOT
 
 
+FEMME_TIERS = [
+    ("Curator", "0 to 500 points", "Warm, empowering, introductory", "4 emails over 10 to 30 days",
+     ["Welcome to Femme Rewards", "Earn Points Fast", "Share the Style. Score Big", "Unlock What's Next"]),
+    ("Trendsetter", "501 to 800 points", "Confident, motivational, community-driven", "4 emails over 10 to 30 days",
+     ["You're a Trendsetter Now", "Earn More With a Review", "Invite Friends, Climb Faster", "Don't Miss These Rewards"]),
+    ("Style Icon", "801 to 1,000 points", "Elevated, stylish, aspirational", "4 emails over 30 days",
+     ["Your Icon Status Is Official", "You're $200 Away From VIP", "Get Rewarded for Your Influence", "Your VIP Status Awaits"]),
+    ("Visionary", "1,001 to 1,500 points", "Premium, editorial, exclusive", "4 emails over 30 days",
+     ["Welcome, Visionary", "Your Style Deserves the Spotlight", "Refer a Fellow Style Leader", "Your Legacy, Your Style"]),
+    ("Couture Queen", "1,501 points and above", "Luxe, personalised, relationship-driven", "5 emails over 30 days",
+     ["You've Reached the Crown Tier", "Your Exclusive Thank You", "Style That Leads the Way", "Refer Royalty, Be Rewarded", "Let Us Style You Personally"]),
+]
+
+
+def femme_rewards():
+    cards = ""
+    for i, (name, pts, tone, flow, emails) in enumerate(FEMME_TIERS, 1):
+        li = "".join(f"            <li>{e}</li>\n" for e in emails)
+        cards += f"""      <li class="tier tier-{i}">
+          <p class="tier-step">Tier {i}</p>
+          <h3>{name}</h3>
+          <p class="tier-points">{pts}</p>
+          <p class="tier-tone">{tone}</p>
+          <p class="tier-flow">{flow}</p>
+          <ol class="tier-emails" aria-label="{name} emails">
+{li}          </ol>
+        </li>
+"""
+    return f"""    <figure class="cs-figure rewards" aria-labelledby="rewards-title">
+      <div class="rewards-head">
+        <h2 id="rewards-title">Femme Rewards: five tiers, 21 lifecycle emails</h2>
+        <p>Built on Yotpo and automated in Klaviyo. Each tier has its own tone, offers and calls to action, moving members from first purchase towards the top tier, with a monthly loyalty statement to every member.</p>
+      </div>
+      <ol class="tiers">
+{cards}      </ol>
+      <ul class="earn" aria-label="Ways to earn points">
+        <li><strong>1 point</strong> per $1 spent</li>
+        <li><strong>75 points</strong> for a photo review</li>
+        <li><strong>200 points</strong> for a tagged Instagram look</li>
+        <li><strong>400 points</strong> for a successful referral</li>
+      </ul>
+      <figcaption class="meta-label">Loyalty programme structure, from the Femme Rewards email flow overview.</figcaption>
+    </figure>
+
+"""
+
+
 def femme():
     p = "femme-connection"
     b = intro2("Femme Connection", "E-commerce | CRM &amp; Lifecycle Marketing | Loyalty | Integrated Campaigns",
@@ -503,6 +550,7 @@ def femme():
         "A/B testing and quality assurance", "Yotpo loyalty and referral strategy",
         "Influencer, ambassador and affiliate programmes", "Integrated retail campaign planning",
         "Shopify migration scoping", "Marketing performance reporting", "Ongoing senior client and project leadership"]))
+    b += femme_rewards()
     b += block("outcome", "Outcome", big(["$30,000 to $120,000 a month"]) + ps([
         "The engagement developed from individual brand and marketing workstreams into an ongoing programme connecting customer acquisition, retention, loyalty and e-commerce experience.",
         "Email and lifecycle marketing became an increasingly important contributor to the business's revenue, supported by structured testing, regular reporting and continuous refinement. Over the engagement, monthly revenue from the email channel grew from approximately $30,000 to $120,000, and in January 2026 automated flow revenue was 60% higher than a year earlier.",

@@ -427,3 +427,45 @@ h1, h2, h3 { font-weight: 300; text-wrap: balance; margin: 0; }
 .fig-tiles.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .shape-screen img { aspect-ratio: 16 / 9; }
 .shape-guide img { aspect-ratio: 2244 / 1406; }
+
+/* Femme Rewards loyalty ladder */
+.rewards {
+  --fc-sand: #E5D2C4; --fc-pink: #FD9AB9; --fc-coral: #E3755E; --fc-green: #1C443B; --fc-black: #0A0A0A;
+  margin-block: clamp(3rem, 7vw, 6rem);
+}
+.rewards-head { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+.rewards-head h2 { grid-column: 1 / span 5; font-size: var(--t-xl); line-height: 1.15; letter-spacing: -0.01em; }
+.rewards-head p { grid-column: 7 / span 6; margin: 0; max-width: 34em; }
+.tiers {
+  list-style: none; margin: 0; padding: 0;
+  display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: clamp(6px, 1vw, 12px);
+  align-items: end;
+}
+.tier { padding: 1.1rem 1rem 1.25rem; font-family: var(--sans); min-width: 0; display: flex; flex-direction: column; }
+.tier h3 { font-family: var(--serif); font-weight: 400; font-size: 1.6rem; line-height: 1.05; margin: 0.35rem 0 0.25rem; }
+.tier p { margin: 0; }
+.tier-step, .tier-flow { font-size: var(--t-xs); opacity: 0.8; }
+.tier-points { font-size: var(--t-sm); font-weight: 500; }
+.tier-tone { font-size: var(--t-xs); margin-top: 0.6rem !important; font-style: italic; font-family: var(--serif); font-size: 0.95rem; }
+.tier-flow { margin-top: auto !important; padding-top: 1rem; }
+.tier-emails { list-style: none; margin: 0.5rem 0 0; padding: 0.6rem 0 0; border-top: 1px solid currentColor; font-size: var(--t-xs); line-height: 1.35; display: grid; gap: 0.35rem; }
+.tier-1 { background: var(--fc-sand); color: var(--fc-black); min-height: 24rem; }
+.tier-2 { background: var(--fc-pink); color: var(--fc-green); min-height: 27rem; }
+.tier-3 { background: var(--fc-coral); color: var(--fc-black); min-height: 30rem; }
+.tier-4 { background: var(--fc-green); color: #FFFFFF; min-height: 33rem; }
+.tier-5 { background: var(--fc-black); color: #FFFFFF; min-height: 36rem; }
+.tier-5 h3 { color: var(--fc-pink); }
+.earn {
+  list-style: none; margin: 1.25rem 0 0; padding: 1rem 0 0; border-top: 1px solid var(--rule);
+  display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem;
+  font-family: var(--sans); font-size: var(--t-sm); color: var(--ink-soft);
+}
+.earn strong { display: block; font-family: var(--serif); font-weight: 400; font-size: var(--t-lg); color: var(--ink); }
+.rewards figcaption { margin-top: 1rem; }
+@media (max-width: 960px) {
+  .rewards-head h2, .rewards-head p { grid-column: 1 / -1; }
+  .tiers { grid-template-columns: 1fr; align-items: stretch; }
+  .tier { min-height: 0 !important; }
+  .tier-emails { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .earn { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
