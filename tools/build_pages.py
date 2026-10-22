@@ -237,6 +237,17 @@ def rt_edgar():
           'alt="The refreshed RTE monogram, with Est 1894, over an interior with a marble fireplace" loading="lazy"></div>\n'
           '      <figcaption class="meta-label">The refreshed RTE monogram and lock-up.</figcaption>\n'
           '    </figure>\n\n')
+    b += figure("fig-single shape-screen", [
+        img(p, "guide-overview", 1920, 1080, "RT Edgar brand guidelines overview: wordmark, RTE monogram, colour palette, typefaces and brand tone", WIDE)],
+        "Brand guidelines: the system at a glance.")
+    b += figure("fig-pair shape-screen", [
+        img(p, "guide-type", 1920, 1080, "Brand guidelines page showing the Juana and TWK Lausanne typefaces on Oxford Blue"),
+        img(p, "guide-colour", 1920, 1080, "Brand guidelines page showing the colour palette: Oxford Blue, White, Pearl White, Olive Green, Space Grey and Raisin Black")],
+        "Typography and colour.")
+    b += figure("fig-pair shape-guide", [
+        img(p, "guide-wordmark", 2244, 1406, "Construction grid for the RT Edgar wordmark on navy"),
+        img(p, "guide-monogram", 2244, 1406, "Construction grid for the RTE monogram on blue")],
+        "Wordmark and monogram construction.")
     b += figure("fig-pair shape-pano", [
         img(p, "desktop-staircase", 1760, 880, "The RT Edgar website home page on desktop: Buy, Sell, Lease and Agents over a sunlit staircase"),
         img(p, "desktop-facade", 1760, 880, "The RT Edgar website home page on desktop over a heritage facade")],
