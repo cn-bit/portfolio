@@ -741,8 +741,8 @@ def cnit():
         "Leading the business meant balancing customer expectations with the realities of production, cash flow, staffing and commercial commitments, and adapting to change. Lockdowns, international supply disruption and a lasting shift in how people dress for work all required adjustments to the offer, the operating model and our priorities."]), hidden=True)
     b += figure("fig-pair shape-square", [
         img(p, "studio10", 1440, 1440, "Carl with Joe Hildebrand on the Studio 10 set"),
-        img(p, "carl-teal", 1080, 1080, "Carl in a teal double-breasted jacket among spring blossom")],
-        "Dressing Joe Hildebrand for a Studio 10 designer showcase, and Carl in teal double-breasted tailoring.")
+        img(p, "melbourne-cup", 503, 503, "Carl in a burgundy suit with two friends in tailoring at the Melbourne Cup, beside a Mumm marquee")],
+        "Dressing Joe Hildebrand for a Studio 10 designer showcase, and at the Melbourne Cup, 2019.")
     b += '''    <section class="cs-section" aria-labelledby="results">
       <h2 id="results">Commercial results</h2>
       <div class="body">
