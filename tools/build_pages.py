@@ -240,10 +240,6 @@ def rt_edgar():
     b += figure("fig-single shape-screen", [
         img(p, "guide-overview", 1920, 1080, "RT Edgar brand guidelines overview: wordmark, RTE monogram, colour palette, typefaces and brand tone", WIDE)],
         "Brand guidelines: the system at a glance.")
-    b += figure("fig-pair shape-screen", [
-        img(p, "guide-type", 1920, 1080, "Brand guidelines page showing the Juana and TWK Lausanne typefaces on Oxford Blue"),
-        img(p, "guide-colour", 1920, 1080, "Brand guidelines page showing the colour palette: Oxford Blue, White, Pearl White, Olive Green, Space Grey and Raisin Black")],
-        "Typography and colour.")
     b += figure("fig-pair shape-guide", [
         img(p, "guide-wordmark", 2244, 1406, "Construction grid for the RT Edgar wordmark on navy"),
         img(p, "guide-monogram", 2244, 1406, "Construction grid for the RTE monogram on blue")],
