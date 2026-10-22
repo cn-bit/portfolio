@@ -205,7 +205,7 @@ def rt_edgar():
                "An established real estate group, reimagined for a changing market", [
                    ("Client", "RT Edgar, real estate, Melbourne"),
                    ("Engagement", "From September 2024"),
-                   ("My role", "Account Director, Antimony Studio"),
+                   ("My role", "Account Director, then Client Services Director, Antimony Studio"),
                ])
     b += figure("fig-single shape-wide", [
         img(p, "sign-hanging", 2400, 1600, "A hanging RT Edgar sign in navy with the white wordmark, on a concrete building", WIDE, lazy=False)])
@@ -464,30 +464,20 @@ FEMME_TIERS = [
 def femme_rewards():
     cards = ""
     for i, (name, pts, tone, flow, emails) in enumerate(FEMME_TIERS, 1):
-        li = "".join(f"            <li>{e}</li>\n" for e in emails)
         cards += f"""      <li class="tier tier-{i}">
           <p class="tier-step">Tier {i}</p>
           <h3>{name}</h3>
-          <p class="tier-points">{pts}</p>
           <p class="tier-tone">{tone}</p>
-          <p class="tier-flow">{flow}</p>
-          <ol class="tier-emails" aria-label="{name} emails">
-{li}          </ol>
+          <p class="tier-flow">{len(emails)} emails</p>
         </li>
 """
     return f"""    <figure class="cs-figure rewards" aria-labelledby="rewards-title">
       <div class="rewards-head">
         <h2 id="rewards-title">Femme Rewards: five tiers, 21 lifecycle emails</h2>
-        <p>Built on Yotpo and automated in Klaviyo. Each tier has its own tone, offers and calls to action, moving members from first purchase towards the top tier, with a monthly loyalty statement to every member.</p>
+        <p>Built on Yotpo and automated in Klaviyo, Femme Rewards connected loyalty to the wider customer lifecycle. Each tier had its own tone and offers, carried through 21 lifecycle emails designed to encourage reviews, referrals and repeat purchase, with a monthly loyalty statement to every member.</p>
       </div>
       <ol class="tiers">
 {cards}      </ol>
-      <ul class="earn" aria-label="Ways to earn points">
-        <li><strong>1 point</strong> per $1 spent</li>
-        <li><strong>75 points</strong> for a photo review</li>
-        <li><strong>200 points</strong> for a tagged Instagram look</li>
-        <li><strong>400 points</strong> for a successful referral</li>
-      </ul>
       <figcaption class="meta-label">Loyalty programme structure, from the Femme Rewards email flow overview.</figcaption>
     </figure>
 
@@ -632,7 +622,7 @@ def casper():
         "The commercial proposition: print, digital and experiential.")
     b += figure("fig-single", [
         img(p, "partners", 1440, 960, "Campaign imagery from Farfetch, Adore Beauty, Hogan, Armani and Good On You, with each brand's logo", WIDE)],
-        "Brand partners included Farfetch, Adore Beauty, Hogan, Armani and Good On You.")
+        "Brands that partnered with Casper during the engagement included Farfetch, Adore Beauty, Hogan, Armani and Good On You.")
     b += block("services", "Services &amp; deliverables", services([
         "Competitor and market research", "B2B go-to-market development",
         "Commercial positioning and product strategy", "Tiered advertising package development",
@@ -647,12 +637,32 @@ def casper():
         "The engagement helped Casper strengthen the commercial foundations it needed to operate as an independent digital publication.",
         "The new advertising product structure and media kit gave Casper a clearer, more professional way to communicate its audience, services and partnership opportunities.",
         "The programme supported new advertising avenues, brand collaborations and successful business-to-business partnerships."])
+        + '        <p class="meta-label reported">Reported by Antimony Studio</p>\n'
         + big(["92% more website sessions", "140% more member sign-ups", "14 brand partner meetings"])
         + ps(["Antimony Studio reported a 92% increase in website sessions and a 75% increase in organic search traffic following the redesign, with member sign-ups up 140%. The advertiser pitch deck led to 14 meetings with prospective brand partners.",
               "Alongside the commercial work, improvements to brand presentation, digital experience and internal workflow gave the publication greater structure for its ongoing development."])
         + visit("https://caspermagazine.com/", "Visit caspermagazine.com"))
     b += nxt("byron-bay-bone-broth.html", "Byron Bay Bone Broth")
     return head("Casper Magazine", "Go-to-market strategy, advertising products and commercial partnerships for Melbourne's independent Casper Magazine, delivered with Antimony Studio.") + b + FOOT
+
+
+
+def chapter_h(num, title, sid):
+    return f'''    <div class="cs-chapter">
+      <p class="meta-label" aria-hidden="true">{num}</p>
+      <h2 id="{sid}">{title}</h2>
+    </div>
+
+'''
+
+
+def chapter_body(sid, inner):
+    return f'''    <section class="cs-section" aria-labelledby="{sid}">
+      <div class="body">
+{inner}      </div>
+    </section>
+
+'''
 
 
 def cnit():
@@ -675,22 +685,22 @@ def cnit():
 '''
     b += figure("fig-single shape-wide", [
         img(p, "portrait-glasses", 2400, 1600, "A man in tortoiseshell glasses, a grey check suit and navy tie, looking down", WIDE, lazy=False)])
-    b += chapter("01", "The opportunity")
-    b += block("opportunity", "The opportunity", ps([
+    b += chapter_h("01", "The opportunity", "opportunity")
+    b += chapter_body("opportunity", ps([
         "In 2012, I established Carl Navè Individually Tailored to make premium tailored menswear more accessible through a highly personal service.",
         "The proposition was straightforward: well-made clothing, considered design and an experience shaped around the individual rather than a conventional retail transaction.",
-        "From a studio in Melbourne's CBD, the business offered bespoke and made-to-measure garments to private clients, professionals, wedding parties and corporate customers. Over the following twelve years it expanded into corporate wardrobes, wholesale manufacturing and made-to-order e-commerce."]), hidden=True)
+        "From a studio in Melbourne's CBD, the business offered bespoke and made-to-measure garments to private clients, professionals, wedding parties and corporate customers. Over the following twelve years it expanded into corporate wardrobes, wholesale manufacturing and made-to-order e-commerce."]))
     b += figure("fig-single shape-wide", [
         img(p, "studio", 2400, 1600, "The tailoring studio: linen curtains, a round table with timber chairs and a jacket on a stand", WIDE)],
         "The studio in Melbourne's CBD.")
-    b += chapter("02", "Brand and customer experience")
-    b += block("brand", "Brand and customer experience", ps([
+    b += chapter_h("02", "Brand &amp; customer experience", "brand")
+    b += chapter_body("brand", ps([
         "The brand needed to stand for more than the garments. It was built around quality, fit, personal service and an appreciation of craftsmanship.",
         "I developed the positioning, product offering, visual identity and marketing approach, and the brand grew through editorial content, digital marketing, events, referrals and partnerships, including a collaboration with Acqua di Parma.",
         "Every relationship began with a consultation. We worked to understand each customer's needs, preferences, lifestyle and the occasions they were dressing for, then guided them through fabric selection, design, fittings and delivery.",
         "Customers returned for new garments, wardrobe updates and important occasions. Over time the business served more than 3,000 customers, and around 60% came back.",
         "That retention was built on trust, product knowledge and consistent delivery. It was also an early, practical education in customer experience: understanding what people value, managing expectations and giving them reasons to return.",
-        "For me, building the brand was as much about delivering on its promise as communicating it."]), hidden=True)
+        "For me, building the brand was as much about delivering on its promise as communicating it."]))
     b += figure("fig-pair shape-square", [
         img(p, "swatch-books", 1080, 1080, "Carl holding an armful of cloth sample books tied with coloured cord"),
         img(p, "consult-table", 1440, 1440, "Open cloth books on the studio's round table, beside a carafe and two glasses")],
@@ -699,11 +709,11 @@ def cnit():
         img(p, "hands", 1440, 1440, "Carl's hands holding tailoring shears and chalk, a tape measure hanging over his shirt"),
         img(p, "basted-jacket", 1440, 1440, "A basted navy jacket on a stand with a tape measure, ready for a fitting")],
         "Measuring, marking and fitting.")
-    b += chapter("03", "Product and production")
-    b += block("production", "Product and production", ps([
+    b += chapter_h("03", "Product &amp; production", "production")
+    b += chapter_body("production", ps([
         "Behind the customer experience sat a complex product and production operation, from fabric sourcing, design and technical specifications to manufacturing, fittings, alterations, quality control and delivery.",
         "I developed and managed relationships with mills, manufacturers and suppliers in Melbourne and overseas, including Italy, the United Kingdom, France and China.",
-        "I also managed pricing, supplier negotiations, purchasing, production planning and financial performance. The constant challenge was balancing the craft of the garments with the commercial realities of margin, capacity and customer expectations."]), hidden=True)
+        "I also managed pricing, supplier negotiations, purchasing, production planning and financial performance. The constant challenge was balancing the craft of the garments with the commercial realities of margin, capacity and customer expectations."]))
     b += figure("fig-single shape-wide", [
         img(p, "sewing", 2400, 1600, "Carl at an industrial sewing machine by a window, a tape measure around his neck", WIDE)],
         "In the workroom.")
@@ -713,13 +723,13 @@ def cnit():
         img(p, "cuff", 1440, 1440, "A navy jacket cuff with working buttons", TILE4),
         img(p, "cn-tie", 1080, 1080, "A striped grenadine tie with CN embroidered on the blade", TILE4)],
         "Canvas, collar, cuff and the CN own-label tie.")
-    b += chapter("04", "Growth, B2B and digital")
-    b += block("growth", "Growth, B2B and digital", ps([
+    b += chapter_h("04", "Growth, B2B &amp; digital", "growth")
+    b += chapter_body("growth", ps([
         "As the business developed, I expanded beyond private tailoring into corporate wardrobes, wedding tailoring, club blazers, uniforms, wholesale partnerships and white-label manufacturing.",
         "The B2B work meant understanding the requirements of other retailers and corporate clients, and developing suitable product and production solutions. Clients included Barry Plant, Woodards, Buxton and Zagame's Ferrari dealership.",
         "White-label production became an established revenue stream, generating around $500,000 a year during its established operating period.",
         "Online, I introduced e-commerce and made-to-order capability so customers could engage with the brand beyond the studio. CRM and communication processes supported appointments, customer records, referrals, follow-up and repeat business.",
-        "Diversification let the business serve different needs while drawing on the same design, production and service capabilities."]), hidden=True)
+        "Diversification let the business serve different needs while drawing on the same design, production and service capabilities."]))
     b += figure("fig-tiles four shape-tile", [
         img(p, "racing-garden", 1000, 1500, "A model in a navy three-piece suit seated in a Melbourne garden pavilion", TILE4),
         img(p, "racing-walk", 1000, 1500, "The same navy suit, walking through a Melbourne garden", TILE4),
@@ -734,17 +744,17 @@ def cnit():
         img(p, "web-home-crop", 1158, 772, "The carlnave.com.au home page: the Carl Navè logo over tailoring tools on navy velvet, with an invitation to book a free consultation"),
         img(p, "web-store-crop", 1920, 1280, "The made-to-order online store page, introducing Italian made-to-order suits")],
         "The website and made-to-order online store, as archived.")
-    b += chapter("05", "Leading the business")
-    b += block("leading", "Leading the business", ps([
+    b += chapter_h("05", "Leading the business", "leading")
+    b += chapter_body("leading", ps([
         "As founder, I was responsible for the business as a whole. I built and led a team of up to eight across tailoring, sales, production, administration and marketing.",
         "My responsibilities ran from business planning and financial performance to hiring, team development, supplier relationships, customer service and operations.",
-        "Leading the business meant balancing customer expectations with the realities of production, cash flow, staffing and commercial commitments, and adapting to change. Lockdowns, international supply disruption and a lasting shift in how people dress for work all required adjustments to the offer, the operating model and our priorities."]), hidden=True)
+        "Leading the business meant balancing customer expectations with the realities of production, cash flow, staffing and commercial commitments, and adapting to change. Lockdowns, international supply disruption and a lasting shift in how people dress for work all required adjustments to the offer, the operating model and our priorities."]))
     b += figure("fig-pair shape-square", [
         img(p, "studio10", 1440, 1440, "Carl with Joe Hildebrand on the Studio 10 set"),
         img(p, "melbourne-cup", 503, 503, "Carl in a burgundy suit with two friends in tailoring at the Melbourne Cup, beside a Mumm marquee")],
         "Dressing Joe Hildebrand for a Studio 10 designer showcase, and at the Melbourne Cup, 2019.")
+    b += chapter_h("06", "Commercial results", "results")
     b += '''    <section class="cs-section" aria-labelledby="results">
-      <h2 id="results">Commercial results</h2>
       <div class="body">
         <dl class="figures">
           <div><dt>Peak annual revenue</dt><dd>$1.2m</dd></div>
@@ -758,7 +768,8 @@ def cnit():
     </section>
 
 '''
-    b += block("taught", "What it taught me", ps([
+    b += chapter_h("07", "What it taught me", "taught")
+    b += chapter_body("taught", ps([
         "Building and running the business shaped how I approach commercial relationships and creative work today.",
         "I have invested in brand development, commissioned creative work, managed marketing budgets, developed products and balanced commercial ambition with operational reality. I understand what sits behind a client's decision because I have made those decisions myself.",
         "It taught me the value of good partners, clear communication and creative work that serves a genuine business purpose. That perspective continues to inform how I lead client relationships."]))

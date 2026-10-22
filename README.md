@@ -18,7 +18,7 @@ work/                      One page per case study
   cnit.html
 assets/css/main.css        All styling (colours and type are set at the top)
 assets/img/<project>/      Web-ready images, each in a large and an 800px version
-_originals/                Original uploads, kept for reprocessing (not linked from the site)
+_originals/                Original uploads for reprocessing. Kept locally only (ignored by Git), backed up outside the repository
 tools/process_images.py    Crops and compresses originals into assets/img
 ```
 

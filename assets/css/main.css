@@ -449,11 +449,11 @@ h1, h2, h3 { font-weight: 300; text-wrap: balance; margin: 0; }
 .tier-tone { font-size: var(--t-xs); margin-top: 0.6rem !important; font-style: italic; font-family: var(--serif); font-size: 0.95rem; }
 .tier-flow { margin-top: auto !important; padding-top: 1rem; }
 .tier-emails { list-style: none; margin: 0.5rem 0 0; padding: 0.6rem 0 0; border-top: 1px solid currentColor; font-size: var(--t-xs); line-height: 1.35; display: grid; gap: 0.35rem; }
-.tier-1 { background: var(--fc-sand); color: var(--fc-black); min-height: 24rem; }
-.tier-2 { background: var(--fc-pink); color: var(--fc-green); min-height: 27rem; }
-.tier-3 { background: var(--fc-coral); color: var(--fc-black); min-height: 30rem; }
-.tier-4 { background: var(--fc-green); color: #FFFFFF; min-height: 33rem; }
-.tier-5 { background: var(--fc-black); color: #FFFFFF; min-height: 36rem; }
+.tier-1 { background: var(--fc-sand); color: var(--fc-black); min-height: 11rem; }
+.tier-2 { background: var(--fc-pink); color: var(--fc-green); min-height: 13rem; }
+.tier-3 { background: var(--fc-coral); color: var(--fc-black); min-height: 15rem; }
+.tier-4 { background: var(--fc-green); color: #FFFFFF; min-height: 17rem; }
+.tier-5 { background: var(--fc-black); color: #FFFFFF; min-height: 19rem; }
 .tier-5 h3 { color: var(--fc-pink); }
 .earn {
   list-style: none; margin: 1.25rem 0 0; padding: 1rem 0 0; border-top: 1px solid var(--rule);
@@ -486,3 +486,12 @@ h1, h2, h3 { font-weight: 300; text-wrap: balance; margin: 0; }
 .cs-figure.screen-narrow { width: min(100%, 860px); margin-inline: auto; }
 .cs-figure.screen-narrow img, .cs-figure.fig-single:not([class*="shape-"]) img { box-shadow: 0 0 0 1px var(--rule); }
 .project-caption .cs-label { grid-column: 1 / -1; margin: 0 0 -0.5rem; }
+
+/* Compact tier bars on phones */
+@media (max-width: 760px) {
+  .tiers { gap: 6px; }
+  .tier { display: grid; grid-template-columns: auto 1fr auto; align-items: baseline; column-gap: 0.75rem; padding: 0.8rem 1rem; }
+  .tier h3 { font-size: 1.25rem; margin: 0; }
+  .tier-tone { grid-column: 1 / -1; margin-top: 0.2rem !important; }
+  .tier-flow { margin: 0 !important; padding: 0; }
+}
