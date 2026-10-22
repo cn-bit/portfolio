@@ -269,10 +269,6 @@ def rt_edgar():
         "Website strategy, design and development", "Property search and technical integration coordination",
         "Content strategy and production", "Printed marketing, sales boards and signage",
         "Client stakeholder and project delivery management"]))
-    b += figure("fig-pair shape-tile", [
-        img(p, "open-home-navy", 1000, 1500, "Navy open home sign with an arrow"),
-        img(p, "open-home-blue", 1000, 1500, "Blue-grey open home sign with an arrow")],
-        "Open home signage.")
     b += block("outcome", "Outcome", ps([
         "The engagement brought together previously distinct brand, customer experience and digital workstreams into a coordinated programme.",
         "The resulting work included a refreshed identity, website redevelopment, customer experience recommendations and a consistent suite of marketing applications for use across the business.",
@@ -340,7 +336,7 @@ def bbbb():
             "The programme connected customer research and journey mapping with practical opportunities to improve the e-commerce experience, including product communication, site navigation and customer engagement."]),
     ]))
     b += figure("fig-single shape-pano", [
-        img(p, "website-hero", 1728, 864, "Byron Bay Bone Broth website banner showing a pouch of organic beef broth", WIDE)])
+        img(p, "capsules-hero", 1728, 864, "Hands holding a jar of Byron Bay Bone Broth organic chicken liver capsules", WIDE)])
     b += block("contribution", "My contribution", ps([
         "I managed the senior client relationship and delivery across the commercial and digital experience workstreams.",
         "For the product rollout, I contributed to campaign strategy and was directly involved in prospective partner research, retailer and practitioner identification, initial business development and introductions.",
@@ -378,7 +374,7 @@ def elly():
                ])
     b += figure("fig-pair shape-tall", [
         img(p, "portrait-back", 1440, 1800, "Model in a strapless Elly Sofoclí gown with sculpted sleeves, seen from behind", lazy=False),
-        img(p, "seated", 1440, 1800, "Model seated in a voluminous Elly Sofoclí gown against white drapery", lazy=False)],
+        img(p, "off-shoulder", 1440, 1800, "Model in an off-the-shoulder Elly Sofoclí ball gown with a long train", lazy=False)],
         "Campaign photography courtesy of Elly Sofoclí.")
     b += block("context", "Business context", ps([
         "Elly Sofoclí is a Melbourne-based bridal designer with an established retail presence and a distinctive approach to contemporary bridalwear.",
@@ -434,8 +430,8 @@ def elly():
         "The commercial development programme was collaborative, with initial research and introductions supported through Antimony and final negotiations managed by the client's sales team."])
         + visit("https://www.ellysofocli.com/", "Visit ellysofocli.com"))
     b += figure("fig-pair shape-tall", [
-        img(p, "studio-mono", 1440, 1800, "Black and white portrait of an Elly Sofoclí gown with sculpted sleeves"),
-        img(p, "corset", 1440, 1800, "Back view of a strapless Elly Sofoclí corset gown with a full skirt")])
+        img(p, "corset", 1440, 1800, "Back view of a strapless Elly Sofoclí corset gown with a full skirt"),
+        img(p, "veil", 1440, 1800, "Model in a fitted lace Elly Sofoclí column gown and veil")])
     b += nxt("femme-connection.html", "Femme Connection")
     return head("Elly Sofoclí", "Building an international wholesale proposition for Melbourne bridal designer Elly Sofoclí, delivered with Antimony Studio.") + b + FOOT
 
@@ -512,16 +508,16 @@ _FT = [("tile-heart", "Pink heart on black"), ("tile-f", "F monogram on pink"), 
 FEMME_HERO = figure("fig-single shape-pano", [
     img("femme-connection", "garden", 2400, 1200, "A model in a printed maxi dress on a lawn in front of a country house", WIDE, lazy=False)],
     "Campaign photography courtesy of Femme Connection.")
-FEMME_MID = figure("fig-pair narrow shape-tall", [
-    img("femme-connection", "vacation", 1242, 1552, "Vacation Vibes campaign: a model in a tropical print shirt and trousers", "(max-width: 600px) 50vw, 430px"),
-    img("femme-connection", "spring", 1242, 1552, "Spring Collection campaign: a model in a pale blue dress in a formal garden", "(max-width: 600px) 50vw, 430px")],
-    "Vacation Vibes and Spring Collection campaigns.")
-FEMME_BRAND = figure("fig-pair narrow shape-tall", [
-    img("femme-connection", "beach", 1242, 1552, "A model in a blue and white printed dress on a beach", "(max-width: 600px) 50vw, 430px"),
-    img("femme-connection", "trousers", 1242, 1552, "A model in a white top and floral trousers on a sunlit terrace", "(max-width: 600px) 50vw, 430px")]) + \
+FEMME_MID = ('    <figure class="cs-figure">\n      <div class="fig-tiles three shape-tall">\n'
+    + "".join(img("femme-connection", n, 1242, 1552, alt, "(max-width: 600px) 33vw, 450px").replace("      <img", "        <img")
+              for n, alt in [("vacation", "Vacation Vibes campaign: a model in a tropical print shirt and trousers"),
+                             ("spring", "Spring Collection campaign: a model in a pale blue dress in a formal garden"),
+                             ("beach", "A model in a blue and white printed dress on a beach")])
+    + '      </div>\n      <figcaption class="meta-label">Seasonal campaigns, including Vacation Vibes and Spring Collection.</figcaption>\n    </figure>\n\n')
+FEMME_BRAND = (
     ('    <figure class="cs-figure">\n      <div class="fig-tiles five shape-tile">\n'
      + "".join(img("femme-connection", n, 1000, 1500, f"Femme Connection brand graphic: {a}", "(max-width: 600px) 33vw, 270px").replace("      <img", "        <img") for n, a in _FT)
-     + '      </div>\n      <figcaption class="meta-label">Brand identity by Antimony Studio.</figcaption>\n    </figure>\n\n')
+     + '      </div>\n      <figcaption class="meta-label">Brand identity by Antimony Studio.</figcaption>\n    </figure>\n\n'))
 
 
 if __name__ == "__main__":

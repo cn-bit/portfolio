@@ -64,6 +64,8 @@ JOBS = [
     ("Website_-_Homepage_2_tiles_0f104e6b-39e8-473a-babf-297f597042e4.webp", "femme-connection", "spring", "tall", 0.5, 0.4),
     ("Website_-_Homepage_2_tiles_3_8a10a25c-cc8e-4034-9073-4e6db2e5c891.webp", "femme-connection", "beach", "tall", 0.5, 0.35),
     ("Website_-_Homepage_2_tiles_2_b4981f2a-463d-493b-938e-d5b97f6b6adf.webp", "femme-connection", "trousers", "tall", 0.5, 0.45),
+    ("6517ac3d456364205ca7d0fd_estelle (2) 1.jpg", "elly-sofocli", "off-shoulder", "tall", 0.5, 0.5),
+    ("banner-3.webp", "byron-bay-bone-broth", "capsules-hero", "pano", 0.5, 0.5),
     # Femme Connection
     ("1_3f4432b3-ddfd-4e85-98c0-6f38406be284.webp", "femme-connection", "tile-f", "tile", 0.5, 0.5),
     ("4_929c41e4-2c4b-4212-a1d8-858b6fafd819.webp", "femme-connection", "tile-c", "tile", 0.5, 0.5),

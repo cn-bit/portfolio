@@ -423,3 +423,5 @@ h1, h2, h3 { font-weight: 300; text-wrap: balance; margin: 0; }
 
 /* Narrower portrait pairs where the source photography is web resolution */
 .cs-figure.fig-pair.narrow { width: min(100%, 860px); }
+
+.fig-tiles.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
