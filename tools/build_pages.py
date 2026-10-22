@@ -237,10 +237,10 @@ def rt_edgar():
           'alt="The refreshed RTE monogram, with Est 1894, over an interior with a marble fireplace" loading="lazy"></div>\n'
           '      <figcaption class="meta-label">The refreshed RTE monogram and lock-up.</figcaption>\n'
           '    </figure>\n\n')
-    b += figure("fig-pair shape-wide", [
-        img(p, "website-home", 2400, 1600, "The new RT Edgar website on a phone"),
-        img(p, "website-agent", 2400, 1600, "An agent profile page on the RT Edgar website")],
-        "The website.")
+    b += figure("fig-pair shape-pano", [
+        img(p, "desktop-staircase", 1760, 880, "The RT Edgar website home page on desktop: Buy, Sell, Lease and Agents over a sunlit staircase"),
+        img(p, "desktop-facade", 1760, 880, "The RT Edgar website home page on desktop over a heritage facade")],
+        "The website on desktop.")
     b += block("contribution", "My contribution", ps([
         "As Account Director, I led the client relationship and coordinated delivery across the broader engagement.",
         "My responsibility was to connect the client's objectives with the studio's strategic, creative and technical work, ensuring priorities remained aligned and that the different workstreams progressed together.",
@@ -269,6 +269,10 @@ def rt_edgar():
         "Website strategy, design and development", "Property search and technical integration coordination",
         "Content strategy and production", "Printed marketing, sales boards and signage",
         "Client stakeholder and project delivery management"]))
+    b += figure("fig-pair shape-wide", [
+        img(p, "website-home", 2400, 1600, "The new RT Edgar website on a phone"),
+        img(p, "website-agent", 2400, 1600, "An agent profile page on the RT Edgar website")],
+        "The website on mobile.")
     b += block("outcome", "Outcome", ps([
         "The engagement brought together previously distinct brand, customer experience and digital workstreams into a coordinated programme.",
         "The resulting work included a refreshed identity, website redevelopment, customer experience recommendations and a consistent suite of marketing applications for use across the business.",
