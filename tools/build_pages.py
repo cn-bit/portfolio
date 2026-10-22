@@ -1,4 +1,4 @@
-"""One-off builder for the four case study pages.
+"""One-off builder for the case study pages.
 
 The generated HTML files in work/ are the source of truth and can be edited
 directly. This script is kept only as a record of how they were assembled.
@@ -285,7 +285,7 @@ def rt_edgar():
         "The resulting work included a refreshed identity, website redevelopment, customer experience recommendations and a consistent suite of marketing applications for use across the business.",
         "My contribution centred on leading the client relationship and helping the different teams deliver an integrated outcome."])
         + visit("https://www.rtedgar.com/", "Visit rtedgar.com"))
-    b += nxt("byron-bay-bone-broth.html", "Byron Bay Bone Broth")
+    b += nxt("casper-magazine.html", "Casper Magazine")
     return head("RT Edgar", "Client leadership across an integrated brand, customer experience and digital programme for Melbourne real estate group RT Edgar, delivered with Antimony Studio.") + b + FOOT
 
 
@@ -579,8 +579,84 @@ FEMME_BRAND = (
      + '      </div>\n      <figcaption class="meta-label">Brand identity by Antimony Studio.</figcaption>\n    </figure>\n\n'))
 
 
+def casper():
+    p = "casper-magazine"
+    b = intro2("Casper Magazine", "B2B Go-to-Market Strategy | Commercial Product Development | Brand Partnerships &amp; Digital Publishing",
+               "Building the commercial foundations of an independent digital publication", [
+                   ("Client", "Casper Magazine, digital publishing, Melbourne"),
+                   ("Engagement", "From March 2024"),
+                   ("My role", "Account Director, Antimony Studio"),
+               ])
+    b += figure("fig-single shape-wide", [
+        img(p, "hero", 1293, 862, "The Casper Magazine wordmark over a portrait of a woman in a straw hat and sunglasses", WIDE, lazy=False)])
+    b += block("context", "Business context", ps([
+        "Casper Magazine is an independent Melbourne publication covering fashion, beauty, wellness, design and contemporary culture.",
+        "Founded by Maria Ugrinovski, its Editor-in-Chief, the publication had built an editorial identity and audience through its blog, Instagram and digital content.",
+        "The next stage was to develop Casper into a more established digital publishing business, supported by a clear advertising proposition, expanded digital services and commercial partnerships."]))
+    b += block("challenge", "The challenge", ps([
+        "Casper had developed its editorial voice and audience, but becoming a commercially focused digital publication required a more structured business offering.",
+        "Prospective advertisers needed to understand the publication's audience, the advertising opportunities available and the value of a commercial partnership.",
+        "The challenge extended beyond advertising space. Casper needed a defined offering covering digital placements, sponsored content, editorial collaborations and brand partnerships.",
+        "That meant market research, commercial product development, a coherent go-to-market approach and professional sales materials, all while respecting the publication's editorial identity."]))
+    b += block("approach", "Our approach", subsections([
+        (None, ["Antimony Studio worked across commercial strategy, brand development, digital publishing and marketing communications."]),
+        ("Competitor research &amp; commercial positioning", [
+            "The programme began with research into comparable publications, their advertising products and the way they structured commercial partnerships.",
+            "The research identified opportunities to establish a more defined and differentiated advertising proposition."]),
+        ("Go-to-market &amp; product development", [
+            "A tiered advertising and partnership offering was developed, combining digital advertising, editorial services, sponsored content and brand collaborations.",
+            "The intention was a structured commercial proposition that Casper could present to businesses with different objectives and budgets."]),
+        ("Media kit development", [
+            "The commercial offering was translated into a redesigned media kit, presenting the publication's identity, audience, advertising services and partnership opportunities in a professional, commercially focused format."]),
+        ("Brand, website &amp; editorial development", [
+            "The wider engagement included brand positioning, visual identity, website development and editorial communications to support the publication's evolution."]),
+        ("Business development &amp; partnerships", [
+            "The programme also supported the identification of prospective advertisers, commercial opportunities and suitable brand collaborations."]),
+        ("Operational systems", [
+            "New project management systems were introduced to improve workflow, coordination and the organisation of ongoing activities."]),
+    ]))
+    b += figure("fig-single shape-screen", [
+        img(p, "identity", 1433, 806, "The Casper identity: a C monogram over a black and white portrait, beside the CASPER wordmark in white on black", WIDE)],
+        "The Casper monogram and wordmark.")
+    b += block("contribution", "My contribution", ps([
+        "As Account Director, I worked directly with Casper's founder and Editor-in-Chief, Maria Ugrinovski.",
+        "I conducted the competitor and market research, looking at how comparable digital publications packaged their advertising services and commercial partnerships.",
+        "From that research, I developed the foundations of Casper's tiered advertising and content offering, bringing digital placements, editorial opportunities and brand collaborations together into a structured commercial proposition.",
+        "I prepared and presented the offering to Maria, working with Antimony's Chief Strategist, who helped refine and approve the strategic direction.",
+        "I also led the redevelopment of Casper's media kit, coordinating the commercial content, positioning and creative delivery needed to make it an effective business development tool.",
+        "Beyond the media kit, I was actively involved in identifying advertising opportunities, developing prospective brand relationships and helping progress business-to-business partnerships.",
+        "I introduced project management systems that improved workflow and coordination across the engagement."])
+        + credit("Branding, design, digital development and specialist creative work were delivered by the wider Antimony Studio team."))
+    b += figure("fig-single", [
+        img(p, "proposition", 1440, 858, "Advertiser presentation slide: Print, Digital, Experiential. Casper is a 360 degree publisher with a unique ecosystem.", WIDE)],
+        "The commercial proposition: print, digital and experiential.")
+    b += figure("fig-single", [
+        img(p, "partners", 1440, 960, "Campaign imagery from Farfetch, Adore Beauty, Hogan, Armani and Good On You, with each brand's logo", WIDE)],
+        "Brand partners included Farfetch, Adore Beauty, Hogan, Armani and Good On You.")
+    b += block("services", "Services &amp; deliverables", services([
+        "Competitor and market research", "B2B go-to-market development",
+        "Commercial positioning and product strategy", "Tiered advertising package development",
+        "Digital and editorial service offering", "Advertising and sponsorship propositions",
+        "Media kit strategy, content and design", "Advertiser and brand partner research",
+        "Business development and partnership support", "Brand identity and digital publishing",
+        "Website design and development", "Content and editorial communications",
+        "Project management systems and workflow", "Senior client leadership and multidisciplinary delivery"]))
+    b += figure("fig-single portrait-narrow shape-tall", [
+        img(p, "phone", 579, 724, "A hand holding a phone showing the Casper digital edition and its 2024 Spring Issue", "(max-width: 600px) 80vw, 440px")])
+    b += block("outcome", "Outcome", ps([
+        "The engagement helped Casper strengthen the commercial foundations it needed to operate as an independent digital publication.",
+        "The new advertising product structure and media kit gave Casper a clearer, more professional way to communicate its audience, services and partnership opportunities.",
+        "The programme supported new advertising avenues, brand collaborations and successful business-to-business partnerships."])
+        + big(["92% more website sessions", "140% more member sign-ups", "14 brand partner meetings"])
+        + ps(["Antimony Studio reported a 92% increase in website sessions and a 75% increase in organic search traffic following the redesign, with member sign-ups up 140%. The advertiser pitch deck led to 14 meetings with prospective brand partners.",
+              "Alongside the commercial work, improvements to brand presentation, digital experience and internal workflow gave the publication greater structure for its ongoing development."])
+        + visit("https://caspermagazine.com/", "Visit caspermagazine.com"))
+    b += nxt("byron-bay-bone-broth.html", "Byron Bay Bone Broth")
+    return head("Casper Magazine", "Go-to-market strategy, advertising products and commercial partnerships for Melbourne's independent Casper Magazine, delivered with Antimony Studio.") + b + FOOT
+
+
 if __name__ == "__main__":
-    for name, fn in [("rt-edgar", rt_edgar), ("byron-bay-bone-broth", bbbb),
+    for name, fn in [("rt-edgar", rt_edgar), ("casper-magazine", casper), ("byron-bay-bone-broth", bbbb),
                      ("elly-sofocli", elly), ("femme-connection", femme)]:
         (ROOT / "work" / f"{name}.html").write_text(fn())
         print("wrote", name)

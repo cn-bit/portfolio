@@ -469,3 +469,6 @@ h1, h2, h3 { font-weight: 300; text-wrap: balance; margin: 0; }
   .tier-emails { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .earn { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
+
+/* A single portrait shown at a modest size, centred */
+.cs-figure.portrait-narrow { width: min(100%, 440px); margin-inline: auto; }

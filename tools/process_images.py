@@ -21,6 +21,7 @@ SHAPES = {
     "tall": (4, 5, 1440),    # paired portraits
     "square": (1, 1, 1440),  # paired squares
     "tile": (2, 3, 1000),    # brand tiles in a row
+    "screen": (16, 9, 1920), # widescreen panels
 }
 
 # (source file, project, output name, shape, focal x, focal y)
@@ -75,6 +76,12 @@ JOBS = [
     ("3_3f4ad2b9-8294-4f9b-b0a8-9874cd2d19aa.webp", "femme-connection", "tile-pink", "tile", 0.5, 0.5),
     ("New_Arrivals_1_2a6f0254-eb03-468f-bc5c-3d1b3a8bbddf.webp", "femme-connection", "occasion", "square", 0.5, 0.5),
     ("New_Arrivals_4.webp", "femme-connection", "everyday", "square", 0.55, 0.5),
+    # Casper Magazine
+    ("casper-hero.webp", "casper-magazine", "hero", "wide", 0.5, 0.5),
+    ("casper-identity.webp", "casper-magazine", "identity", "screen", 0.5, 0.5),
+    ("casper-proposition.webp", "casper-magazine", "proposition", None, 0.5, 0.5),
+    ("casper-partners.png", "casper-magazine", "partners", None, 0.5, 0.5),
+    ("casper-phone.webp", "casper-magazine", "phone", "tall", 0.5, 0.5),
 ]
 
 
@@ -93,12 +100,14 @@ def crop_to(im, rw, rh, fx, fy):
 def save(im, path, max_w):
     if im.width > max_w:
         im = im.resize((max_w, round(im.height * max_w / im.width)), Image.LANCZOS)
-    im.save(path, "JPEG", quality=80, optimize=True, progressive=True)
+    im.save(path, "JPEG", quality=88, optimize=True, progressive=True)
     return im.size
 
 
-def main():
+def main(only=None):
     for src, project, name, shape, fx, fy in JOBS:
+        if only and project != only:
+            continue
         im = Image.open(SRC / src).convert("RGB")
         if shape:
             rw, rh, full = SHAPES[shape]
@@ -113,4 +122,5 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    import sys
+    main(sys.argv[1] if len(sys.argv) > 1 else None)

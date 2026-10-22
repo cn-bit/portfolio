@@ -7,9 +7,10 @@ A plain static site (HTML and CSS, no build step), published with GitHub Pages.
 ## What's where
 
 ```
-index.html                 Home: introduction and the four projects
+index.html                 Home: introduction and the five projects
 about.html                 About and contact
 work/                      One page per case study
+  casper-magazine.html
   byron-bay-bone-broth.html
   elly-sofocli.html
   rt-edgar.html
