@@ -721,9 +721,9 @@ def cnit():
     b += figure("fig-single screen-narrow", [
         img(p, "web-store", 1600, 1602, "The made-to-order online store, with jackets shown in navy, black and charcoal", "(max-width: 900px) 100vw, 860px")],
         "The made-to-order online store, as archived.")
-    b += figure("fig-pair narrow shape-tall", [
-        img(p, "wedding-1", 1056, 1320, "Two grooms in a black dinner suit and a check jacket against a navy backdrop"),
-        img(p, "wedding-2", 1056, 1320, "A seated man in a black dinner suit and a standing man in a burgundy dinner jacket")],
+    b += figure("fig-pair narrow shape-tile", [
+        img(p, "wedding-1", 1000, 1500, "A groom in a black velvet dinner jacket and check trousers against a navy backdrop"),
+        img(p, "wedding-2", 1000, 1500, "A groom in a grey check dinner jacket and black trousers against a navy backdrop")],
         "Wedding tailoring.")
     b += figure("fig-single shape-wide", [
         img(p, "ties", 2400, 1600, "Silk ties in stripes of burgundy, navy, green and blue on a rail", WIDE)])
