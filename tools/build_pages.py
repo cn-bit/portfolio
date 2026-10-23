@@ -232,6 +232,9 @@ def rt_edgar():
         ("Content &amp; integrated communications", [
             "The wider programme included content planning, video production oversight and the development of communications and marketing applications that supported a more consistent brand presence."]),
     ]))
+    b += figure("fig-single shape-screen", [
+        img(p, "audience-segments", 2400, 1350, "A page from the RT Edgar audience segmentation report, setting out three strategic segments: Legacy Prestige Vendors, Next-Gen Aspirational Buyers and Sellers, and Emerging Lifestyle Buyers and Renters", WIDE)],
+        "From the audience segmentation report: the three strategic segments behind the brand and digital work.")
     b += ('    <figure class="cs-figure fig-single">\n'
           '      <div class="panel panel-rte"><img src="../assets/img/rt-edgar/monogram-fireplace.jpg" width="578" height="722" '
           'alt="The refreshed RTE monogram, with Est 1894, over an interior with a marble fireplace" loading="lazy"></div>\n'
@@ -252,7 +255,7 @@ def rt_edgar():
         "As Account Director, I led the client relationship and coordinated delivery across the broader engagement.",
         "My responsibility was to connect the client's objectives with the studio's strategic, creative and technical work, ensuring priorities remained aligned and that the different workstreams progressed together.",
         "I worked directly with RT Edgar stakeholders and external technical partners, managing project communication, briefing, reviews, delivery priorities and the dependencies between brand, content, customer experience and website development.",
-        "I also contributed to customer journey mapping and the development of client-facing CX recommendations, helping translate research into practical priorities."])
+        "I led the research and strategy phase, conducting the competitor audit and developing the audience segmentation, buyer personas and customer journey mapping. Working with Antimony's Chief Strategist and Marketing Coordinator, I translated the findings into the CX recommendations that shaped priorities across the brand and digital work."])
         + credit("Brand design, specialist strategy, development and creative production were delivered collaboratively by the wider Antimony Studio team."))
     b += figure("fig-pair shape-wide", [
         img(p, "brochure-blue", 2400, 1600, "RT Edgar property brochure with a pale blue cover"),
@@ -283,7 +286,7 @@ def rt_edgar():
     b += block("outcome", "Outcome", ps([
         "The engagement brought together previously distinct brand, customer experience and digital workstreams into a coordinated programme.",
         "The resulting work included a refreshed identity, website redevelopment, customer experience recommendations and a consistent suite of marketing applications for use across the business.",
-        "My contribution centred on leading the client relationship and helping the different teams deliver an integrated outcome."])
+        "My contribution centred on leading the client relationship and the research and strategy that shaped the programme."])
         + visit("https://www.rtedgar.com/", "Visit rtedgar.com"))
     b += nxt("casper-magazine.html", "Casper Magazine")
     return head("RT Edgar", "Client leadership across an integrated brand, customer experience and digital programme for Melbourne real estate group RT Edgar, delivered with Antimony Studio.") + b + FOOT
@@ -346,14 +349,17 @@ def bbbb():
         ("Digital experience recommendations", [
             "The programme connected customer research and journey mapping with practical opportunities to improve the e-commerce experience, including product communication, site navigation and customer engagement."]),
     ]))
+    b += figure("fig-single shape-screen", [
+        img(p, "journey-stage", 2400, 1350, "A page from the Byron Bay Bone Broth customer journey report: a grid showing one audience segment's goals, actions, emotions, pain points and UX opportunities at each stage from awareness to advocacy", WIDE)],
+        "From the customer journey report: what one audience segment feels and needs at each stage, from awareness to advocacy.")
     b += figure("fig-single shape-pano", [
         img(p, "capsules-hero", 1728, 864, "Hands holding a jar of Byron Bay Bone Broth organic chicken liver capsules", WIDE)])
     b += block("contribution", "My contribution", ps([
         "I managed the senior client relationship and delivery across the commercial and digital experience workstreams.",
         "For the product rollout, I contributed to campaign strategy and was directly involved in prospective partner research, retailer and practitioner identification, initial business development and introductions.",
-        "I also coordinated the creation and rollout of campaign assets, working with Antimony's creative team and the client's commercial stakeholders.",
+        "I collaborated on the product and pricing strategy and the practitioner proposal, and coordinated the creation and rollout of campaign assets, working with Antimony's creative team and the client's commercial stakeholders.",
         "Once introductions were established, the client's sales team managed final negotiations and account conversion.",
-        "Across the CX programme, I contributed to customer research, segmentation, lifecycle and journey mapping, and worked with the studio's specialists to turn findings into prioritised digital recommendations.",
+        "I led the CX research and strategy, including the competitor audit, audience segmentation and customer journey report. Working with Antimony's Chief Strategist and Marketing Coordinator, I turned the findings into prioritised digital recommendations, which were implemented after user acceptance testing.",
         "A central part of my role was connecting the commercial opportunities with the broader customer experience and ensuring both programmes progressed through delivery."]))
     b += figure("fig-pair shape-wide", [
         img(p, "farm", 1440, 960, "A farmer among pasture-raised chickens at sunrise"),

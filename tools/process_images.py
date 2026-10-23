@@ -22,6 +22,7 @@ SHAPES = {
     "square": (1, 1, 1440),  # paired squares
     "tile": (2, 3, 1000),    # brand tiles in a row
     "screen": (16, 9, 1920), # widescreen panels
+    "deck": (16, 9, 2400),   # strategy report pages, kept sharp for legibility
 }
 
 # (source file, project, output name, shape, focal x, focal y)
@@ -82,6 +83,8 @@ JOBS = [
     ("casper-proposition.webp", "casper-magazine", "proposition", None, 0.5, 0.5),
     ("casper-partners.png", "casper-magazine", "partners", None, 0.5, 0.5),
     ("casper-phone.webp", "casper-magazine", "phone", "tall", 0.5, 0.5),
+    ("bbbb-journey-stage.png", "byron-bay-bone-broth", "journey-stage", "deck", 0.5, 0.5),
+    ("rte-segments.png", "rt-edgar", "audience-segments", "deck", 0.5, 0.5),
     # Carl Navè — Individually Tailored
     ("cnit-portrait-glasses.jpg", "cnit", "portrait-glasses", "wide", 0.55, 0.4),
     ("cnit-studio.jpg", "cnit", "studio", "wide", 0.5, 0.5),
