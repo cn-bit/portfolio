@@ -747,9 +747,9 @@ def cnit():
         img(p, "zagame", 1152, 1152, "A Zagame Collection spread titled An Open Letter From a Melbourne Tailor")],
         "With Zagame's Ferrari dealership, and a Zagame Collection feature, 2019.")
     b += figure("fig-pair shape-wide", [
-        img(p, "web-home-crop", 1158, 772, "The carlnave.com.au home page: the Carl Navè logo over tailoring tools on navy velvet, with an invitation to book a free consultation"),
-        img(p, "web-store-crop", 1920, 1280, "The made-to-order online store page, introducing Italian made-to-order suits")],
-        "The website and made-to-order online store, as archived.")
+        img(p, "website-home", 2400, 1600, "The carlnave.com.au home page: the Carl Navè logo over tailoring tools on navy velvet, with an invitation to book a free consultation"),
+        img(p, "website-store", 2400, 1600, "The made-to-order online store page: Italian Made to Order Suits Store, with two models in navy and charcoal suits and two jackets on stands")],
+        "The carlnave.com.au home page and made-to-order online store.")
     b += chapter_h("05", "Leading the business", "leading")
     b += chapter_body("leading", ps([
         "As founder, I was responsible for the business as a whole. I built and led a team of up to eight across tailoring, sales, production, administration and marketing.",
