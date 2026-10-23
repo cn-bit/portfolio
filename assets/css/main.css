@@ -339,6 +339,15 @@ h1, h2, h3 { font-weight: 300; text-wrap: balance; margin: 0; }
 .about-grid .bio { grid-column: 6 / span 6; min-width: 0; }
 .about-grid h1 { font-size: var(--t-xl); line-height: 1.15; margin-bottom: 1.5rem; }
 .about-grid .bio p { margin: 0 0 1em; max-width: 34em; }
+.about-grid .bio-sub {
+  font-family: var(--sans);
+  font-size: var(--t-sm);
+  font-weight: 500;
+  margin: 3rem 0 1rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--rule);
+  max-width: 34em;
+}
 
 /* Tablet */
 @media (max-width: 960px) {
