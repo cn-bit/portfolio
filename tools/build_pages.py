@@ -25,9 +25,9 @@ def head(title, desc):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="{FONTS}">
-<link rel="stylesheet" href="../assets/css/main.css?v=202610221816">
+<link rel="stylesheet" href="../assets/css/main.css?v=202610231500">
 </head>
-<body>
+<body id="top">
 <a class="skip" href="#main">Skip to content</a>
 
 <div class="wrap">
@@ -58,8 +58,13 @@ FOOT = '''  </div>
         <li><span class="meta-label">LinkedIn</span><a href="https://www.linkedin.com/in/carl-nave/" target="_blank" rel="noopener">linkedin.com/in/carl-nave</a></li>
       </ul>
     </div>
+    <nav class="foot-nav meta-label" aria-label="Footer">
+      <a href="../#work">Selected work</a>
+      <a href="../about.html">About</a>
+      <a href="#top">Back to top</a>
+    </nav>
     <div class="colophon meta-label">
-      <span>Carl Navè, Melbourne</span>
+      <span><a href="../">Carl Navè, Melbourne</a></span>
       <span>Agency work shown was delivered with Antimony Studio.</span>
     </div>
   </div>
