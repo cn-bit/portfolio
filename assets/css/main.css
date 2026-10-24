@@ -80,9 +80,26 @@ a:hover { text-decoration-thickness: 2px; }
 }
 .wordmark {
   font-family: var(--serif);
-  font-size: 1.7rem;
-  letter-spacing: 0.01em;
   text-decoration: none;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.wordmark-name {
+  font-size: 1.6rem;
+  line-height: 1;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+.wordmark-sub {
+  font-family: var(--sans);
+  font-size: var(--t-xs, 0.75rem);
+  letter-spacing: 0.02em;
+  color: var(--ink-soft);
+}
+@media (max-width: 760px) {
+  .wordmark-name { font-size: 1.25rem; letter-spacing: 0.2em; }
+  .wordmark-sub { display: none; }
 }
 .site-nav { display: flex; gap: clamp(1rem, 3vw, 2.25rem); }
 .site-nav a {
