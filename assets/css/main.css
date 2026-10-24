@@ -86,10 +86,9 @@ a:hover { text-decoration-thickness: 2px; }
   gap: 0.5rem;
 }
 .wordmark-name {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   line-height: 1;
-  letter-spacing: 0.24em;
-  text-transform: uppercase;
+  letter-spacing: 0.01em;
 }
 .wordmark-sub {
   font-family: var(--sans);
@@ -98,7 +97,6 @@ a:hover { text-decoration-thickness: 2px; }
   color: var(--ink-soft);
 }
 @media (max-width: 760px) {
-  .wordmark-name { font-size: 1.25rem; letter-spacing: 0.2em; }
   .wordmark-sub { display: none; }
 }
 .site-nav { display: flex; gap: clamp(1rem, 3vw, 2.25rem); }

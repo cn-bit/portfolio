@@ -25,7 +25,7 @@ def head(title, desc):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="{FONTS}">
-<link rel="stylesheet" href="../assets/css/main.css?v=202610241145">
+<link rel="stylesheet" href="../assets/css/main.css?v=202610241148">
 </head>
 <body id="top">
 <a class="skip" href="#main">Skip to content</a>
