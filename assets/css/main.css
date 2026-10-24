@@ -97,14 +97,19 @@ a:hover { text-decoration-thickness: 2px; }
   color: var(--ink-soft);
 }
 @media (max-width: 760px) {
-  /* On phones the positioning line sits on its own row beneath the name and menu */
-  .site-head { flex-wrap: wrap; row-gap: 0.5rem; }
-  .wordmark { display: contents; }
-  .wordmark-name { order: 1; }
-  .site-nav { order: 2; }
-  .wordmark-sub { order: 3; flex-basis: 100%; font-size: 0.75rem; line-height: 1.5; }
+  /* On phones: name and positioning as a lockup divided by a fine rule, menu on its own row beneath */
+  .site-head { flex-wrap: wrap; align-items: flex-start; row-gap: 1rem; }
+  .wordmark { flex-direction: row; align-items: center; gap: 0.9rem; }
+  .wordmark-name { font-size: 1.85rem; }
+  .wordmark-sub { border-left: 1px solid var(--ink-soft); padding-left: 0.9rem; font-size: 0.66rem; line-height: 1.45; }
   .wordmark-sub > span { display: block; }
   .wordmark-sub > .sep { display: none; }
+  .site-nav { flex-basis: 100%; border-top: 1px solid var(--rule); padding-top: 0.75rem; justify-content: flex-start; gap: 1.75rem; }
+}
+@media (max-width: 370px) {
+  .wordmark-name { font-size: 1.6rem; }
+  .wordmark { gap: 0.7rem; }
+  .wordmark-sub { padding-left: 0.7rem; font-size: 0.62rem; }
 }
 .site-nav { display: flex; gap: clamp(1rem, 3vw, 2.25rem); }
 .site-nav a {
