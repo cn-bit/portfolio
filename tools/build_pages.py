@@ -25,14 +25,14 @@ def head(title, desc):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="{FONTS}">
-<link rel="stylesheet" href="../assets/css/main.css?v=202610241545">
+<link rel="stylesheet" href="../assets/css/main.css?v=202610241550">
 </head>
 <body id="top">
 <a class="skip" href="#main">Skip to content</a>
 
 <div class="wrap">
   <header class="site-head">
-    <a class="wordmark" href="../"><span class="wordmark-name">Carl Navè</span><span class="wordmark-sub">Client Leadership | Commercial Development &amp; Customer Experience</span></a>
+    <a class="wordmark" href="../"><span class="wordmark-name">Carl Navè</span><span class="wordmark-sub"><span>Client Leadership</span><span class="sep"> | </span><span>Commercial Development</span><span class="sep"> &amp; </span><span>Customer Experience</span></span></a>
     <nav class="site-nav" aria-label="Main">
       <a href="../#work" aria-current="page">Work</a>
       <a href="../about.html">About</a>
