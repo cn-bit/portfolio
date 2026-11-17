@@ -110,10 +110,11 @@
       </div>
     </section>
 
-    <figure class="cs-figure fig-single shape-pano">
-      <img src="../assets/img/rt-edgar/desktop-staircase-800.jpg" srcset="../assets/img/rt-edgar/desktop-staircase-800.jpg 800w, ../assets/img/rt-edgar/desktop-staircase.jpg 1760w" sizes="(max-width: 1440px) 100vw, 1360px" width="1760" height="880" alt="The RT Edgar website home page on desktop: Buy, Sell, Lease and Agents over a sunlit staircase" loading="lazy">
-      <figcaption class="meta-label">The website on desktop.</figcaption>
+    <figure class="cs-figure fig-single">
+      <video class="scroll-video" src="../assets/img/rt-edgar/website-scroll.mp4" poster="../assets/img/rt-edgar/website-scroll-poster.jpg" width="1600" height="900" autoplay muted loop playsinline preload="metadata" aria-label="A slow scroll through the RT Edgar website home page: Buy, Sell, Lease and Agents, property search, the 130 years story, featured properties, appraisals, news and the footer"></video>
+      <figcaption class="meta-label">The RT Edgar website.</figcaption>
     </figure>
+    <script>if (matchMedia('(prefers-reduced-motion: reduce)').matches) document.querySelectorAll('.scroll-video').forEach(v => { v.removeAttribute('autoplay'); v.pause(); v.controls = true; });</script>
 
     <figure class="cs-figure fig-single shape-wide">
       <div class="swap" tabindex="0" role="group" aria-label="Brochure covers: hover or tap to switch colour">
