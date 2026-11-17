@@ -547,7 +547,7 @@ html { scroll-behavior: smooth; }
 .cs-section .body .points { list-style: none; margin: 0; padding: 0; max-width: 34em; }
 .cs-section .body .points li { margin: 0 0 0.9em; }
 .cs-section .body .points li:last-child { margin-bottom: 0; }
-.cs-section .body .points .point-label { display: block; font-family: var(--sans); font-size: var(--t-sm); font-weight: 500; letter-spacing: 0.01em; margin-bottom: 0.3rem; }
+.cs-section .body .points .point-label { display: block; font-family: var(--sans); font-size: calc(var(--t-sm) * 0.9); font-weight: 400; letter-spacing: 0.02em; color: var(--ink-soft); margin-bottom: 0.15rem; }
 .cs-section .body .points li { margin-bottom: 1.4em; }
 
 /* Image that floats on the page: no frame or outline */
