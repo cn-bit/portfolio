@@ -547,4 +547,5 @@ html { scroll-behavior: smooth; }
 .cs-section .body .points { list-style: none; margin: 0; padding: 0; max-width: 34em; }
 .cs-section .body .points li { margin: 0 0 0.9em; }
 .cs-section .body .points li:last-child { margin-bottom: 0; }
-.cs-section .body .points strong { font-weight: 600; }
+.cs-section .body .points .point-label { display: block; font-family: var(--sans); font-size: var(--t-sm); font-weight: 500; letter-spacing: 0.01em; margin-bottom: 0.3rem; }
+.cs-section .body .points li { margin-bottom: 1.4em; }
