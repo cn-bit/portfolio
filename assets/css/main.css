@@ -155,7 +155,10 @@ h1, h2, h3 { font-weight: 300; text-wrap: balance; margin: 0; }
 
 /* Home: work index */
 .work-index { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--section); padding-bottom: var(--section); }
-.work-index > h2 { position: absolute; left: -9999px; }
+.work-intro { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 1.5rem; }
+.work-intro h2 { grid-column: 1 / span 4; font-family: var(--sans); font-size: var(--t-sm); font-weight: 500; padding-top: 0.35rem; }
+.work-intro p { grid-column: 6 / span 7; margin: 0; max-width: 34em; }
+@media (max-width: 960px) { .work-intro h2, .work-intro p { grid-column: 1 / -1; } .work-intro { gap: 0.6rem; } }
 
 .project a { text-decoration: none; display: block; }
 .project-media { display: grid; gap: clamp(8px, 1.2vw, 16px); }
