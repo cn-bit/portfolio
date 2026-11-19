@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300&display=swap">
-<link rel="stylesheet" href="../assets/css/main.css?v=202611191215">
+<link rel="stylesheet" href="../assets/css/main.css?v=202611191225">
 </head>
 <body id="top">
 <a class="skip" href="#main">Skip to content</a>
@@ -86,7 +86,7 @@
     </figure>
 
     <figure class="cs-figure fig-single float">
-      <img src="../assets/img/rt-edgar/brand-guides.gif" srcset="../assets/img/rt-edgar/brand-guides-800.gif 800w, ../assets/img/rt-edgar/brand-guides.gif 1200w" sizes="(max-width: 1440px) 100vw, 1360px" width="1200" height="752" alt="Animated sequence of RT Edgar brand guideline cards: wordmark and monogram construction, icons, typography, colour palette and accessibility" loading="lazy">
+      <video class="loop-video guides-video" src="../assets/img/rt-edgar/brand-guides.mp4" poster="../assets/img/rt-edgar/brand-guides-poster.jpg" width="1200" height="752" muted loop playsinline preload="none" aria-label="Animated sequence of RT Edgar brand guideline cards: wordmark and monogram construction, icons, typography, colour palette and accessibility"></video>
       <figcaption class="meta-label">Brand guidelines: wordmark and monogram construction, type, colour and icons.</figcaption>
     </figure>
 
@@ -111,11 +111,10 @@
     </section>
 
     <figure class="cs-figure fig-single">
-      <video class="scroll-video" src="../assets/img/rt-edgar/website-scroll.mp4" poster="../assets/img/rt-edgar/website-scroll-poster.jpg" width="1600" height="900" autoplay muted loop playsinline preload="metadata" aria-label="A slow scroll through the RT Edgar website home page: Buy, Sell, Lease and Agents, property search, the 130 years story, featured properties, appraisals, news and the footer"></video>
+      <video class="scroll-video loop-video" src="../assets/img/rt-edgar/website-scroll.mp4" poster="../assets/img/rt-edgar/website-scroll-poster.jpg" width="1600" height="900" muted loop playsinline preload="none" aria-label="A slow scroll through the RT Edgar website home page: Buy, Sell, Lease and Agents, property search, the 130 years story, featured properties, appraisals, news and the footer"></video>
       <figcaption class="meta-label">The RT Edgar website.</figcaption>
     </figure>
-    <script>if (matchMedia('(prefers-reduced-motion: reduce)').matches) document.querySelectorAll('.scroll-video').forEach(v => { v.removeAttribute('autoplay'); v.pause(); v.controls = true; });</script>
-
+    
     <figure class="cs-figure fig-single shape-wide">
       <div class="swap" tabindex="0" role="group" aria-label="Brochure covers: hover or tap to switch colour">
         <img src="../assets/img/rt-edgar/brochure-blue-800.jpg" srcset="../assets/img/rt-edgar/brochure-blue-800.jpg 800w, ../assets/img/rt-edgar/brochure-blue.jpg 2400w" sizes="(max-width: 1440px) 100vw, 1360px" width="2400" height="1600" alt="RT Edgar property brochure with a pale blue cover" loading="lazy">
@@ -130,7 +129,7 @@
     </figure>
 
     <figure class="cs-figure fig-single shape-wide">
-      <img src="../assets/img/rt-edgar/board-street-800.jpg" srcset="../assets/img/rt-edgar/board-street-800.jpg 800w, ../assets/img/rt-edgar/board-street.jpg 2025w" sizes="(max-width: 1440px) 100vw, 1360px" width="2025" height="1350" alt="An RT Edgar campaign board on a red brick wall in a Melbourne street" loading="lazy">
+      <img src="../assets/img/rt-edgar/board-street-800.jpg" srcset="../assets/img/rt-edgar/board-street-800.jpg 800w, ../assets/img/rt-edgar/board-street.jpg 1800w" sizes="(max-width: 1440px) 100vw, 1360px" width="1800" height="1200" alt="An RT Edgar campaign board on a red brick wall in a Melbourne street" loading="lazy">
       <figcaption class="meta-label">Street campaign board.</figcaption>
     </figure>
 
@@ -179,5 +178,6 @@
     </div>
   </div>
 </footer>
+<script src="../assets/js/media.js" defer></script>
 </body>
 </html>

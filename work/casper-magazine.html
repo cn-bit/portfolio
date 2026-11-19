@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300&display=swap">
-<link rel="stylesheet" href="../assets/css/main.css?v=202611191215">
+<link rel="stylesheet" href="../assets/css/main.css?v=202611191225">
 </head>
 <body id="top">
 <a class="skip" href="#main">Skip to content</a>
@@ -66,11 +66,10 @@
     </section>
 
     <figure class="cs-figure fig-single">
-      <video class="scroll-video" src="../assets/img/casper-magazine/website-scroll.mp4" poster="../assets/img/casper-magazine/website-scroll-poster.jpg" width="1600" height="900" autoplay muted loop playsinline preload="metadata" aria-label="A slow scroll through the Casper Magazine website home page, from feature stories to beauty, runway and sustainable reads"></video>
+      <video class="scroll-video loop-video" src="../assets/img/casper-magazine/website-scroll.mp4" poster="../assets/img/casper-magazine/website-scroll-poster.jpg" width="1600" height="900" muted loop playsinline preload="none" aria-label="A slow scroll through the Casper Magazine website home page, from feature stories to beauty, runway and sustainable reads"></video>
       <figcaption class="meta-label">The Casper Magazine website.</figcaption>
     </figure>
-    <script>if (matchMedia('(prefers-reduced-motion: reduce)').matches) document.querySelectorAll('.scroll-video').forEach(v => { v.removeAttribute('autoplay'); v.pause(); v.controls = true; });</script>
-
+    
     <figure class="cs-figure fig-single">
       <img src="../assets/img/casper-magazine/proposition-800.jpg" srcset="../assets/img/casper-magazine/proposition-800.jpg 800w, ../assets/img/casper-magazine/proposition.jpg 1440w" sizes="(max-width: 1440px) 100vw, 1360px" width="1440" height="858" alt="Advertiser presentation slide: Print, Digital, Experiential. Casper is a 360 degree publisher with a unique ecosystem." loading="lazy">
       <figcaption class="meta-label">The commercial proposition: print, digital and experiential.</figcaption>
@@ -137,5 +136,6 @@
     </div>
   </div>
 </footer>
+<script src="../assets/js/media.js" defer></script>
 </body>
 </html>

@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300&display=swap">
-<link rel="stylesheet" href="../assets/css/main.css?v=202611191215">
+<link rel="stylesheet" href="../assets/css/main.css?v=202611191225">
 </head>
 <body id="top">
 <a class="skip" href="#main">Skip to content</a>
@@ -67,11 +67,10 @@
     </section>
 
     <figure class="cs-figure fig-single">
-      <video class="scroll-video" src="../assets/img/femme-connection/website-scroll.mp4" poster="../assets/img/femme-connection/website-scroll-poster.jpg" width="1600" height="900" autoplay muted loop playsinline preload="metadata" aria-label="A slow scroll through the Femme Connection website home page, from the In Bloom campaign to best sellers, collections and the rewards sign-up"></video>
+      <video class="scroll-video loop-video" src="../assets/img/femme-connection/website-scroll.mp4" poster="../assets/img/femme-connection/website-scroll-poster.jpg" width="1600" height="900" muted loop playsinline preload="none" aria-label="A slow scroll through the Femme Connection website home page, from the In Bloom campaign to best sellers, collections and the rewards sign-up"></video>
       <figcaption class="meta-label">The Femme Connection website.</figcaption>
     </figure>
-    <script>if (matchMedia('(prefers-reduced-motion: reduce)').matches) document.querySelectorAll('.scroll-video').forEach(v => { v.removeAttribute('autoplay'); v.pause(); v.controls = true; });</script>
-
+    
     <figure class="cs-figure">
       <div class="fig-tiles three shape-tall">
         <img src="../assets/img/femme-connection/vacation-800.jpg" srcset="../assets/img/femme-connection/vacation-800.jpg 800w, ../assets/img/femme-connection/vacation.jpg 1242w" sizes="(max-width: 600px) 33vw, 450px" width="1242" height="1552" alt="Vacation Vibes campaign: a model in a tropical print shirt and trousers" loading="lazy">
@@ -188,5 +187,6 @@
     </div>
   </div>
 </footer>
+<script src="../assets/js/media.js" defer></script>
 </body>
 </html>

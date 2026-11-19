@@ -574,3 +574,4 @@ html { scroll-behavior: smooth; }
 
 /* Looping screen recording */
 .scroll-video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; background: var(--paper); box-shadow: 0 0 0 1px var(--rule); }
+.guides-video { display: block; width: 100%; height: auto; aspect-ratio: 1200 / 752; background: var(--paper); }
